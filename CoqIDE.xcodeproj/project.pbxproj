@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13939BAE14923EC7005C07F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BAD14923EC7005C07F2 /* UIKit.framework */; };
+		13939BB014923EC7005C07F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BAF14923EC7005C07F2 /* Foundation.framework */; };
+		13939BB214923EC7005C07F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BB114923EC7005C07F2 /* CoreGraphics.framework */; };
+		13939BB814923EC7005C07F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13939BB614923EC7005C07F2 /* InfoPlist.strings */; };
+		13939BBA14923EC7005C07F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13939BB914923EC7005C07F2 /* main.m */; };
+		13939BBE14923EC7005C07F2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13939BBD14923EC7005C07F2 /* AppDelegate.m */; };
+		13939BC114923EC7005C07F2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13939BBF14923EC7005C07F2 /* MainStoryboard.storyboard */; };
+		13939BC414923EC7005C07F2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 13939BC314923EC7005C07F2 /* ViewController.m */; };
+		13939BCC14923EC7005C07F2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BCB14923EC7005C07F2 /* SenTestingKit.framework */; };
+		13939BCD14923EC8005C07F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BAD14923EC7005C07F2 /* UIKit.framework */; };
+		13939BCE14923EC8005C07F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BAF14923EC7005C07F2 /* Foundation.framework */; };
+		13939BD614923EC8005C07F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13939BD414923EC8005C07F2 /* InfoPlist.strings */; };
+		13939BD914923EC8005C07F2 /* CoqIDETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13939BD814923EC8005C07F2 /* CoqIDETests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		13939BCF14923EC8005C07F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 13939BA014923EC7005C07F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 13939BA814923EC7005C07F2;
+			remoteInfo = CoqIDE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		13939BA914923EC7005C07F2 /* CoqIDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoqIDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13939BAD14923EC7005C07F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		13939BAF14923EC7005C07F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		13939BB114923EC7005C07F2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		13939BB514923EC7005C07F2 /* CoqIDE-Info.plist */ = {isa = PBXFileReference; path = "CoqIDE-Info.plist"; sourceTree = "<group>"; };
+		13939BB714923EC7005C07F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13939BB914923EC7005C07F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		13939BBB14923EC7005C07F2 /* CoqIDE-Prefix.pch */ = {isa = PBXFileReference; path = "CoqIDE-Prefix.pch"; sourceTree = "<group>"; };
+		13939BBC14923EC7005C07F2 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		13939BBD14923EC7005C07F2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		13939BC014923EC7005C07F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		13939BC214923EC7005C07F2 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		13939BC314923EC7005C07F2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		13939BCA14923EC7005C07F2 /* CoqIDETests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoqIDETests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		13939BCB14923EC7005C07F2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		13939BD314923EC8005C07F2 /* CoqIDETests-Info.plist */ = {isa = PBXFileReference; path = "CoqIDETests-Info.plist"; sourceTree = "<group>"; };
+		13939BD514923EC8005C07F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		13939BD714923EC8005C07F2 /* CoqIDETests.h */ = {isa = PBXFileReference; path = CoqIDETests.h; sourceTree = "<group>"; };
+		13939BD814923EC8005C07F2 /* CoqIDETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoqIDETests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13939BA614923EC7005C07F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13939BAE14923EC7005C07F2 /* UIKit.framework in Frameworks */,
+				13939BB014923EC7005C07F2 /* Foundation.framework in Frameworks */,
+				13939BB214923EC7005C07F2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13939BC614923EC7005C07F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13939BCC14923EC7005C07F2 /* SenTestingKit.framework in Frameworks */,
+				13939BCD14923EC8005C07F2 /* UIKit.framework in Frameworks */,
+				13939BCE14923EC8005C07F2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13939B9E14923EC7005C07F2 = {
+			isa = PBXGroup;
+			children = (
+				13939BB314923EC7005C07F2 /* CoqIDE */,
+				13939BD114923EC8005C07F2 /* CoqIDETests */,
+				13939BAC14923EC7005C07F2 /* Frameworks */,
+				13939BAA14923EC7005C07F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		13939BAA14923EC7005C07F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13939BA914923EC7005C07F2 /* CoqIDE.app */,
+				13939BCA14923EC7005C07F2 /* CoqIDETests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13939BAC14923EC7005C07F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				13939BAD14923EC7005C07F2 /* UIKit.framework */,
+				13939BAF14923EC7005C07F2 /* Foundation.framework */,
+				13939BB114923EC7005C07F2 /* CoreGraphics.framework */,
+				13939BCB14923EC7005C07F2 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		13939BB314923EC7005C07F2 /* CoqIDE */ = {
+			isa = PBXGroup;
+			children = (
+				13939BBC14923EC7005C07F2 /* AppDelegate.h */,
+				13939BBD14923EC7005C07F2 /* AppDelegate.m */,
+				13939BBF14923EC7005C07F2 /* MainStoryboard.storyboard */,
+				13939BC214923EC7005C07F2 /* ViewController.h */,
+				13939BC314923EC7005C07F2 /* ViewController.m */,
+				13939BB414923EC7005C07F2 /* Supporting Files */,
+			);
+			path = CoqIDE;
+			sourceTree = "<group>";
+		};
+		13939BB414923EC7005C07F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13939BB514923EC7005C07F2 /* CoqIDE-Info.plist */,
+				13939BB614923EC7005C07F2 /* InfoPlist.strings */,
+				13939BB914923EC7005C07F2 /* main.m */,
+				13939BBB14923EC7005C07F2 /* CoqIDE-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		13939BD114923EC8005C07F2 /* CoqIDETests */ = {
+			isa = PBXGroup;
+			children = (
+				13939BD714923EC8005C07F2 /* CoqIDETests.h */,
+				13939BD814923EC8005C07F2 /* CoqIDETests.m */,
+				13939BD214923EC8005C07F2 /* Supporting Files */,
+			);
+			path = CoqIDETests;
+			sourceTree = "<group>";
+		};
+		13939BD214923EC8005C07F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				13939BD314923EC8005C07F2 /* CoqIDETests-Info.plist */,
+				13939BD414923EC8005C07F2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13939BA814923EC7005C07F2 /* CoqIDE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13939BDC14923EC8005C07F2 /* Build configuration list for PBXNativeTarget "CoqIDE" */;
+			buildPhases = (
+				13939BA514923EC7005C07F2 /* Sources */,
+				13939BA614923EC7005C07F2 /* Frameworks */,
+				13939BA714923EC7005C07F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoqIDE;
+			productName = CoqIDE;
+			productReference = 13939BA914923EC7005C07F2 /* CoqIDE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		13939BC914923EC7005C07F2 /* CoqIDETests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13939BDF14923EC8005C07F2 /* Build configuration list for PBXNativeTarget "CoqIDETests" */;
+			buildPhases = (
+				13939BC514923EC7005C07F2 /* Sources */,
+				13939BC614923EC7005C07F2 /* Frameworks */,
+				13939BC714923EC7005C07F2 /* Resources */,
+				13939BC814923EC7005C07F2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				13939BD014923EC8005C07F2 /* PBXTargetDependency */,
+			);
+			name = CoqIDETests;
+			productName = CoqIDETests;
+			productReference = 13939BCA14923EC7005C07F2 /* CoqIDETests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13939BA014923EC7005C07F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 13939BA314923EC7005C07F2 /* Build configuration list for PBXProject "CoqIDE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13939B9E14923EC7005C07F2;
+			productRefGroup = 13939BAA14923EC7005C07F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13939BA814923EC7005C07F2 /* CoqIDE */,
+				13939BC914923EC7005C07F2 /* CoqIDETests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13939BA714923EC7005C07F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13939BB814923EC7005C07F2 /* InfoPlist.strings in Resources */,
+				13939BC114923EC7005C07F2 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13939BC714923EC7005C07F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13939BD614923EC8005C07F2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13939BC814923EC7005C07F2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13939BA514923EC7005C07F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13939BBA14923EC7005C07F2 /* main.m in Sources */,
+				13939BBE14923EC7005C07F2 /* AppDelegate.m in Sources */,
+				13939BC414923EC7005C07F2 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13939BC514923EC7005C07F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13939BD914923EC8005C07F2 /* CoqIDETests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		13939BD014923EC8005C07F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 13939BA814923EC7005C07F2 /* CoqIDE */;
+			targetProxy = 13939BCF14923EC8005C07F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		13939BB614923EC7005C07F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13939BB714923EC7005C07F2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		13939BBF14923EC7005C07F2 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13939BC014923EC7005C07F2 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		13939BD414923EC8005C07F2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				13939BD514923EC8005C07F2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		13939BDA14923EC8005C07F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		13939BDB14923EC8005C07F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		13939BDD14923EC8005C07F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoqIDE/CoqIDE-Prefix.pch";
+				INFOPLIST_FILE = "CoqIDE/CoqIDE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		13939BDE14923EC8005C07F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoqIDE/CoqIDE-Prefix.pch";
+				INFOPLIST_FILE = "CoqIDE/CoqIDE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		13939BE014923EC8005C07F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoqIDE.app/CoqIDE";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoqIDE/CoqIDE-Prefix.pch";
+				INFOPLIST_FILE = "CoqIDETests/CoqIDETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		13939BE114923EC8005C07F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CoqIDE.app/CoqIDE";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoqIDE/CoqIDE-Prefix.pch";
+				INFOPLIST_FILE = "CoqIDETests/CoqIDETests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13939BA314923EC7005C07F2 /* Build configuration list for PBXProject "CoqIDE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13939BDA14923EC8005C07F2 /* Debug */,
+				13939BDB14923EC8005C07F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13939BDC14923EC8005C07F2 /* Build configuration list for PBXNativeTarget "CoqIDE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13939BDD14923EC8005C07F2 /* Debug */,
+				13939BDE14923EC8005C07F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		13939BDF14923EC8005C07F2 /* Build configuration list for PBXNativeTarget "CoqIDETests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13939BE014923EC8005C07F2 /* Debug */,
+				13939BE114923EC8005C07F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13939BA014923EC7005C07F2 /* Project object */;
+}
