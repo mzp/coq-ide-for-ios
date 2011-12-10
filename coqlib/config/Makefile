@@ -32,15 +32,15 @@ COQTOOLSBYTEFLAGS=-custom
 # LIBDIR=path where the Coq library will reside
 # MANDIR=path where to install manual pages
 # EMACSDIR=path where to put Coq's Emacs mode (coq.el)
-BINDIR="/Users/mzp/Downloads/coq-8.3pl2/dist/bin"
-COQLIBINSTALL="/Users/mzp/Downloads/coq-8.3pl2/dist/lib/coq"
-MANDIR="/Users/mzp/Downloads/coq-8.3pl2/dist/man"
-DOCDIR="/Users/mzp/Downloads/coq-8.3pl2/dist/share/doc/coq"
-EMACSLIB="/Users/mzp/Downloads/coq-8.3pl2/dist/share/emacs/site-lisp"
+BINDIR="/Users/mzp/coq-8.3pl2/dist/bin"
+COQLIBINSTALL="/Users/mzp/coq-8.3pl2/dist/lib/coq"
+MANDIR="/Users/mzp/coq-8.3pl2/dist/man"
+DOCDIR="/Users/mzp/coq-8.3pl2/dist/share/doc/coq"
+EMACSLIB="/Users/mzp/coq-8.3pl2/dist/share/emacs/site-lisp"
 EMACS=
 
 # Path to Coq distribution
-COQSRC=/Users/mzp/Downloads/coq-8.3pl2
+COQSRC=/Users/mzp/coq-8.3pl2
 VERSION=8.3pl2
 
 # Directory containing Camlp4 binaries. Can be empty if camlp4 is in the PATH
@@ -124,7 +124,7 @@ DLLEXT=.so
 MKDIR=mkdir -p
 
 # where to put the coqdoc.sty style file
-COQDOCDIR="/Users/mzp/Downloads/coq-8.3pl2/dist/share/emacs/site-lisp"
+COQDOCDIR="/Users/mzp/coq-8.3pl2/dist/share/emacs/site-lisp"
 
 # command to update TeX' kpathsea database
 #MKTEXLSR=
@@ -139,7 +139,7 @@ STRIP=strip
 HASCOQIDE=no
 
 # Defining REVISION
-CHECKEDOUT=0
+CHECKEDOUT=git
 
 # Defining options to generate dependencies graphs
 DOT=dot

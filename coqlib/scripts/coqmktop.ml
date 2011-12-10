@@ -62,8 +62,7 @@ let includes () =
       (fun d l -> "-I" :: ("\"" ^ List.fold_left Filename.concat coqlib d ^ "\"") :: l)
       (src_dirs ())
       (["-I"; "\"" ^ camlp4lib ^ "\""] @
-	 ["-I"; "\"" ^ coqlib ^ "\""] @
-	 (if !coqide then ["-thread"; "-I"; "+lablgtk2"] else []))
+	 ["-I"; "\"" ^ coqlib ^ "\""])
 
 (* Transform bytecode object file names in native object file names *)
 let native_suffix f =
@@ -90,11 +89,11 @@ let files_to_link userfiles =
   let toplevel_objs =
     if !top then topobjs else if !opt then notopobjs else [] in
   let ide_objs =
-    if !coqide then "Threads"::"Lablgtk"::"GtkThread"::ide else []
+    []
   in
   let ide_libs =
     if !coqide then
-      ["threads.cma" ; "lablgtk.cma" ; "gtkThread.cmo" ; "ide/ide.cma" ]
+      ["ide/ide.cma" ]
     else []
   in
   let objs = dyn_objs @ libobjs @ core_objs @ toplevel_objs @ ide_objs in
@@ -220,23 +219,7 @@ let declare_loading_string () =
   if not !top then
     "Mltop.remove ();;"
   else
-    "begin try
-       (* Enable rectypes in the toplevel if it has the directive #rectypes *)
-       begin match Hashtbl.find Toploop.directive_table \"rectypes\" with
-         | Toploop.Directive_none f -> f ()
-         | _ -> ()
-       end
-     with
-       | Not_found -> ()
-     end;;
-
-     let ppf = Format.std_formatter;;
-     Mltop.set_top
-       {Mltop.load_obj=
-         (fun f -> if not (Topdirs.load_file ppf f) then Util.error (\"Could not load plugin \"^f));\
-        Mltop.use_file=Topdirs.dir_use ppf;
-        Mltop.add_dir=Topdirs.dir_directory;
-        Mltop.ml_loop=(fun () -> Toploop.loop ppf) };;\n"
+    "\n"
 
 (* create a temporary main file to link *)
 let create_tmp_main_file modules =
@@ -295,7 +278,6 @@ let main () =
     let args =
       options @ (includes ()) @ copts @ tolink @ dynlink @ [ main_file ] in
       (* add topstart.cmo explicitly because we shunted ocamlmktop wrapper *)
-    let args = if !top then args @ [ "topstart.cmo" ] else args in
       (* Now, with the .cma, we MUST use the -linkall option *)
     let command = String.concat " " (prog::"-rectypes"::args) in
       if !echo then

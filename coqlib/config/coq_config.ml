@@ -2,8 +2,8 @@
 
 let local = false
 let coqrunbyteflags = "-custom"
-let coqlib = "/Users/mzp/Downloads/coq-8.3pl2/dist/lib/coq"
-let coqsrc = "/Users/mzp/Downloads/coq-8.3pl2"
+let coqlib = "/Users/mzp/coq-8.3pl2/dist/lib/coq"
+let coqsrc = "/Users/mzp/coq-8.3pl2"
 let ocaml = "ocaml"
 let ocamlc = "ocamlc"
 let ocamlopt = "ocamlopt"
@@ -30,7 +30,7 @@ let osdeplibs = "-cclib -lunix"
 let version = "8.3pl2"
 let caml_version = "3.12.1"
 let date = "December 2011"
-let compile_date = "12 10 2011 13:48:44"
+let compile_date = "12 10 2011 22:35:36"
 let vo_magic_number = 08300
 let state_magic_number = 58300
 let exec_extension = ""
@@ -39,7 +39,7 @@ let browser = "firefox -remote \"OpenURL(%s,new-tab)\" || firefox %s &"
 let wwwcoq = "http://coq.inria.fr/"
 let wwwrefman = wwwcoq ^ "distrib/" ^ version ^ "/refman/"
 let wwwstdlib = wwwcoq ^ "distrib/" ^ version ^ "/stdlib/"
-let localwwwrefman = "file:///Users/mzp/Downloads/coq-8.3pl2/dist/share/doc/coq/html/refman/"
+let localwwwrefman = "file:///Users/mzp/coq-8.3pl2/dist/share/doc/coq/html/refman/"
 
 let theories_dirs = [
 "Arith";

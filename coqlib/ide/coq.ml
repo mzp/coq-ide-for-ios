@@ -51,9 +51,7 @@ let i = ref 0
 
 let get_version_date () =
   let date =
-    if Glib.Utf8.validate Coq_config.date
-    then Coq_config.date
-    else "<date not printable>" in
+    "<date not printable>" in
   try
     let ch = open_in (Coq_config.coqsrc^"/revision") in
     let ver = input_line ch in
@@ -70,12 +68,10 @@ let version () =
     Printf.sprintf
       "The Coq Proof Assistant, version %s (%s)\
        \nArchitecture %s running %s operating system\
-       \nGtk version is %s\
        \nThis is the %s version (%s is the best one for this architecture and OS)\
        \n"
       ver date
       Coq_config.arch Sys.os_type
-      (let x,y,z = GMain.Main.version in Printf.sprintf "%d.%d.%d" x y z)
     (if Mltop.is_native then "native" else "bytecode")
     (if Coq_config.best="opt" then "native" else "bytecode")
 
@@ -370,7 +366,7 @@ type reset_info = {
   loc_ast : Util.loc * Vernacexpr.vernac_expr;
 }
 
-let compute_reset_info loc_ast = 
+let compute_reset_info loc_ast =
   let status,cur_prf = match snd loc_ast with
     | com when is_vernac_proof_ending_command com -> NoReset,None
     | VernacEndSegment _ -> NoReset,None
@@ -378,7 +374,7 @@ let compute_reset_info loc_ast =
         NoReset,Some (Pfedit.get_current_proof_name (), Pfedit.current_proof_depth ())
     | _ ->
         (match Lib.has_top_frozen_state () with
-           | Some sp -> 
+           | Some sp ->
                prerr_endline ("On top of state "^Libnames.string_of_path (fst sp));
                ResetAtRegisteredObject sp,None
            | None -> NoReset,None)
@@ -386,7 +382,7 @@ let compute_reset_info loc_ast =
   { status = status;
     proofs = Pfedit.get_all_proof_names ();
     cur_prf = cur_prf;
-    loc_ast = loc_ast; 
+    loc_ast = loc_ast;
   }
 
 let reset_initial () =
@@ -543,7 +539,7 @@ let rewind sequence cmd_stk =
           end
       | [] ->
           begin
-            try 
+            try
               let ide,coq = Stack.pop cmd_stk in
               pop_state do_rewind [] coq reset_op prev_proofs curprf;
               prerr_endline "push";
