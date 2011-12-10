@@ -11,6 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "AppDelegate.h"
 #include "ocamlrun/byterun/glue.h"
+#include "ocamlrun/byterun/callback.h"
 
 char *pwd = 0;
 char *pwd2 = 0;
@@ -39,7 +40,7 @@ char *fullp(NSString *relPath) {
     }
 }
 
-static void run() {
+static void init() {
     const char* include = fullp(@"ocaml-3.12.0");
     const char* prog    = fullp(@"ocamlprog");
     const char* argv[] = {
@@ -49,8 +50,7 @@ static void run() {
         prog,
         NULL
     };
-    const int argc = sizeof(argv) / sizeof(argv[0]) - 1;
-    ocaml_main(argc,argv);
+    caml_main((char**)argv);
     free((char*)include);
     free((char*)prog);
 }
@@ -59,7 +59,9 @@ int main(int argc, char *argv[])
 {
     @autoreleasepool {
         myloadingBundle = [NSBundle mainBundle];
-        run();
+        init();
+
+        caml_callback(*caml_named_value("answer"), Val_unit);
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
