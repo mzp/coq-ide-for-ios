@@ -13,3 +13,19 @@ build/*
 xcuserdata
 profile
 *.moved-aside
+
+# OCaml
+*.annot
+*.cmo
+*.cma
+*.cmi
+*.a
+*.o
+*.cmx
+*.cmxs
+*.cmxa
+
+# Omake
+.omakedb
+.omakedb.lock
+*.omc

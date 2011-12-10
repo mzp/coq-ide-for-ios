@@ -1,0 +1,49 @@
+(************************************************************************)
+(*  v      *   The Coq Proof Assistant  /  The Coq Development Team     *)
+(* <O___,, *   INRIA - CNRS - LIX - LRI - PPS - Copyright 1999-2010     *)
+(*   \VV/  **************************************************************)
+(*    //   *      This file is distributed under the terms of the       *)
+(*         *       GNU Lesser General Public License Version 2.1        *)
+(************************************************************************)
+
+(*i $Id: ppextend.mli 13329 2010-07-26 11:05:39Z herbelin $ i*)
+
+(*i*)
+open Pp
+open Names
+(*i*)
+
+(*s Pretty-print. *)
+
+(* Dealing with precedences *)
+
+type precedence = int
+
+type parenRelation = L | E | Any | Prec of precedence
+
+type tolerability = precedence * parenRelation
+
+type ppbox =
+  | PpHB of int
+  | PpHOVB of int
+  | PpHVB of int
+  | PpVB of int
+  | PpTB
+
+type ppcut =
+  | PpBrk of int * int
+  | PpTbrk of int * int
+  | PpTab
+  | PpFnl
+
+val ppcmd_of_box : ppbox -> std_ppcmds -> std_ppcmds
+
+val ppcmd_of_cut : ppcut -> std_ppcmds
+
+type unparsing =
+  | UnpMetaVar of int * parenRelation
+  | UnpListMetaVar of int * parenRelation * unparsing list
+  | UnpBinderListMetaVar of int * bool * unparsing list
+  | UnpTerminal of string
+  | UnpBox of ppbox * unparsing list
+  | UnpCut of ppcut
