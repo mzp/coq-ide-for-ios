@@ -19,8 +19,7 @@
 #include "intext.h"
 #include "fail.h"
 #include "memory.h"
-#include "mlvalues.h"memory.h: #define CAMLparam1(x) \
-
+#include "mlvalues.h"
 
 #include "bng.h"
 #include "nat.h"
