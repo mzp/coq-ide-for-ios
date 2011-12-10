@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		137DA2EC1492EEC200D58665 /* ocaml-3.12.0 in Resources */ = {isa = PBXBuildFile; fileRef = 137DA2EB1492EEC200D58665 /* ocaml-3.12.0 */; };
+		137DA2EF1492EFE300D58665 /* ocamlprog in Resources */ = {isa = PBXBuildFile; fileRef = 137DA2EE1492EFE300D58665 /* ocamlprog */; };
 		13939BAE14923EC7005C07F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BAD14923EC7005C07F2 /* UIKit.framework */; };
 		13939BB014923EC7005C07F2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BAF14923EC7005C07F2 /* Foundation.framework */; };
 		13939BB214923EC7005C07F2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BB114923EC7005C07F2 /* CoreGraphics.framework */; };
@@ -187,6 +189,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		137DA2EB1492EEC200D58665 /* ocaml-3.12.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "ocaml-3.12.0"; sourceTree = "<group>"; };
+		137DA2EE1492EFE300D58665 /* ocamlprog */ = {isa = PBXFileReference; lastKnownFileType = file; path = ocamlprog; sourceTree = "<group>"; };
 		13939BA914923EC7005C07F2 /* CoqIDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoqIDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13939BAD14923EC7005C07F2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		13939BAF14923EC7005C07F2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -495,7 +499,9 @@
 		13939BB414923EC7005C07F2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				137DA2EB1492EEC200D58665 /* ocaml-3.12.0 */,
 				13939BB514923EC7005C07F2 /* CoqIDE-Info.plist */,
+				137DA2EE1492EFE300D58665 /* ocamlprog */,
 				13939BB614923EC7005C07F2 /* InfoPlist.strings */,
 				13939BB914923EC7005C07F2 /* main.m */,
 				13939BBB14923EC7005C07F2 /* CoqIDE-Prefix.pch */,
@@ -899,6 +905,8 @@
 				13939BC114923EC7005C07F2 /* MainStoryboard.storyboard in Resources */,
 				13BB35CF1492482400DE58A7 /* ld.conf in Resources */,
 				13BB35DB1492482400DE58A7 /* primitives in Resources */,
+				137DA2EC1492EEC200D58665 /* ocaml-3.12.0 in Resources */,
+				137DA2EF1492EFE300D58665 /* ocamlprog in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
