@@ -50,6 +50,8 @@ let top        = ref false
 let searchisos = ref false
 let coqide     = ref false
 let echo       = ref false
+let runtime    = ref false
+let byte       = ref (None : string option)
 
 let src_dirs () =
   [ []; ["kernel";"byterun"]; [ "config" ]; [ "toplevel" ] ] @
@@ -144,7 +146,9 @@ Flags are:
   -opt           Compile in native code
   -searchisos    Build a toplevel for SearchIsos
   -top           Build Coq on a OCaml toplevel (incompatible with -opt)
-  -R dir         Specify recursively directories for Ocaml\n";
+  -R dir         Specify recursively directories for Ocaml
+  -runtime       Create runtime
+  -byte          Compile in byte code\n";
   exit 1
 
 (* parsing of the command line *)
@@ -176,6 +180,8 @@ let parse_args () =
 	    | a :: rem -> parse (a::o::op,fl) rem
 	    | []       -> usage ()
 	end
+    | "-runtime" :: rem -> runtime := true ; parse (op,fl) rem
+    | "-byte" :: runtime :: rem -> byte := (Some runtime) ; parse (op,fl) rem
     | "-R" :: a :: rem ->
         parse ((List.rev(List.flatten (List.map (fun d -> ["-I";d])
 					 (all_subdirs a))))@op,fl) rem
@@ -259,15 +265,23 @@ let main () =
       (* bytecode (we shunt ocamlmktop script which fails on win32) *)
       let ocamlmktoplib = " toplevellib.cma" in
       let ocamlcexec = Filename.concat camlbin "ocamlc" in
-      let ocamlccustom = Printf.sprintf "%s %s -linkall "
-        ocamlcexec Coq_config.coqrunbyteflags in
+      let flags =
+        match !runtime, !byte with
+          | true, _ ->
+              "-make-runtime"
+          | _,Some runtime ->
+              "-use-runtime " ^ runtime
+          | _ ->
+              Coq_config.coqrunbyteflags  ^ " -linkall" in
+      let ocamlccustom = Printf.sprintf "%s %s "
+        ocamlcexec flags in
       (if !top then ocamlccustom^ocamlmktoplib else ocamlccustom)
   in
   (* files to link *)
   let (modules, tolink) = files_to_link userfiles in
   (*file for dynlink *)
   let dynlink=
-    if not (!opt || !top) then
+    if not (!opt || !top || !runtime) then
       [tmp_dynlink()]
     else
       []
@@ -276,7 +290,12 @@ let main () =
   let main_file = create_tmp_main_file modules in
   try
     let args =
-      options @ (includes ()) @ copts @ tolink @ dynlink @ [ main_file ] in
+      if !runtime then
+        options @ (includes ()) @ copts @ tolink
+      else if !byte <> None then
+        options @ (includes ()) @ tolink @ [ main_file ]
+      else
+        options @ (includes ()) @ copts @ tolink @ dynlink @ [ main_file ] in
       (* add topstart.cmo explicitly because we shunted ocamlmktop wrapper *)
       (* Now, with the .cma, we MUST use the -linkall option *)
     let command = String.concat " " (prog::"-rectypes"::args) in

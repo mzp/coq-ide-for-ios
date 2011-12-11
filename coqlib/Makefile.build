@@ -293,7 +293,8 @@ $(COQIDEOPT): $(COQMKTOP) $(LINKCMX) $(LIBCOQRUN) ide/ide.cmxa
 
 $(COQIDEBYTE): $(COQMKTOP) $(LINKCMO) $(LIBCOQRUN) ide/ide.cma
 	$(SHOW)'COQMKTOP -o $@'	
-	$(HIDE)$(COQMKTOP) -boot -g -ide -top $(BYTEFLAGS) -o $@
+	$(HIDE)$(COQMKTOP) -boot -runtime $(BYTEFLAGS) -o bin/coq-runtime
+	$(HIDE)$(COQMKTOP) -byte bin/coq-runtime -boot -ide -top $(BYTEFLAGS) -o $@
 
 $(COQIDE):
 	cd bin; ln -sf coqide.$(HASCOQIDE)$(EXE) coqide$(EXE)
