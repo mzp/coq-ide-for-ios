@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1379FC9A1496368D00E7D539 /* coq_fix_code.c in Sources */ = {isa = PBXBuildFile; fileRef = 1379FC8D1496368D00E7D539 /* coq_fix_code.c */; };
+		1379FC9B1496368D00E7D539 /* coq_interp.c in Sources */ = {isa = PBXBuildFile; fileRef = 1379FC911496368D00E7D539 /* coq_interp.c */; };
+		1379FC9C1496368D00E7D539 /* coq_memory.c in Sources */ = {isa = PBXBuildFile; fileRef = 1379FC941496368D00E7D539 /* coq_memory.c */; };
+		1379FC9D1496368D00E7D539 /* coq_values.c in Sources */ = {isa = PBXBuildFile; fileRef = 1379FC961496368D00E7D539 /* coq_values.c */; };
 		137DA2EC1492EEC200D58665 /* ocaml-3.12.0 in Resources */ = {isa = PBXBuildFile; fileRef = 137DA2EB1492EEC200D58665 /* ocaml-3.12.0 */; };
 		137DA2EF1492EFE300D58665 /* ocamlprog in Resources */ = {isa = PBXBuildFile; fileRef = 137DA2EE1492EFE300D58665 /* ocamlprog */; };
 		13939BAE14923EC7005C07F2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13939BAD14923EC7005C07F2 /* UIKit.framework */; };
@@ -189,6 +193,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1379FC8D1496368D00E7D539 /* coq_fix_code.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coq_fix_code.c; sourceTree = "<group>"; };
+		1379FC8E1496368D00E7D539 /* coq_fix_code.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coq_fix_code.h; sourceTree = "<group>"; };
+		1379FC8F1496368D00E7D539 /* coq_gc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coq_gc.h; sourceTree = "<group>"; };
+		1379FC901496368D00E7D539 /* coq_instruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coq_instruct.h; sourceTree = "<group>"; };
+		1379FC911496368D00E7D539 /* coq_interp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coq_interp.c; sourceTree = "<group>"; };
+		1379FC921496368D00E7D539 /* coq_interp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coq_interp.h; sourceTree = "<group>"; };
+		1379FC931496368D00E7D539 /* coq_jumptbl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coq_jumptbl.h; sourceTree = "<group>"; };
+		1379FC941496368D00E7D539 /* coq_memory.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coq_memory.c; sourceTree = "<group>"; };
+		1379FC951496368D00E7D539 /* coq_memory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coq_memory.h; sourceTree = "<group>"; };
+		1379FC961496368D00E7D539 /* coq_values.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coq_values.c; sourceTree = "<group>"; };
+		1379FC971496368D00E7D539 /* coq_values.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = coq_values.h; sourceTree = "<group>"; };
+		1379FC981496368D00E7D539 /* int64_emul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = int64_emul.h; sourceTree = "<group>"; };
+		1379FC991496368D00E7D539 /* int64_native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = int64_native.h; sourceTree = "<group>"; };
 		137DA2EB1492EEC200D58665 /* ocaml-3.12.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "ocaml-3.12.0"; sourceTree = "<group>"; };
 		137DA2EE1492EFE300D58665 /* ocamlprog */ = {isa = PBXFileReference; lastKnownFileType = file; path = ocamlprog; sourceTree = "<group>"; };
 		13939BA914923EC7005C07F2 /* CoqIDE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoqIDE.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -452,6 +469,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1379FC8C1496368D00E7D539 /* coqrun */ = {
+			isa = PBXGroup;
+			children = (
+				1379FC8D1496368D00E7D539 /* coq_fix_code.c */,
+				1379FC8E1496368D00E7D539 /* coq_fix_code.h */,
+				1379FC8F1496368D00E7D539 /* coq_gc.h */,
+				1379FC901496368D00E7D539 /* coq_instruct.h */,
+				1379FC911496368D00E7D539 /* coq_interp.c */,
+				1379FC921496368D00E7D539 /* coq_interp.h */,
+				1379FC931496368D00E7D539 /* coq_jumptbl.h */,
+				1379FC941496368D00E7D539 /* coq_memory.c */,
+				1379FC951496368D00E7D539 /* coq_memory.h */,
+				1379FC961496368D00E7D539 /* coq_values.c */,
+				1379FC971496368D00E7D539 /* coq_values.h */,
+				1379FC981496368D00E7D539 /* int64_emul.h */,
+				1379FC991496368D00E7D539 /* int64_native.h */,
+			);
+			path = coqrun;
+			sourceTree = "<group>";
+		};
 		13939B9E14923EC7005C07F2 = {
 			isa = PBXGroup;
 			children = (
@@ -485,6 +522,7 @@
 		13939BB314923EC7005C07F2 /* CoqIDE */ = {
 			isa = PBXGroup;
 			children = (
+				1379FC8C1496368D00E7D539 /* coqrun */,
 				13BB2EBB1492428400DE58A7 /* ocamlrun */,
 				13939BBC14923EC7005C07F2 /* AppDelegate.h */,
 				13939BBD14923EC7005C07F2 /* AppDelegate.m */,
@@ -1096,6 +1134,10 @@
 				13BB35E61492482400DE58A7 /* unix.c in Sources */,
 				13BB35E71492482400DE58A7 /* weak.c in Sources */,
 				13BB364B149249E500DE58A7 /* bng.c in Sources */,
+				1379FC9A1496368D00E7D539 /* coq_fix_code.c in Sources */,
+				1379FC9B1496368D00E7D539 /* coq_interp.c in Sources */,
+				1379FC9C1496368D00E7D539 /* coq_memory.c in Sources */,
+				1379FC9D1496368D00E7D539 /* coq_values.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1198,6 +1240,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoqIDE/CoqIDE-Prefix.pch";
 				INFOPLIST_FILE = "CoqIDE/CoqIDE-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CoqIDE/byterun\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1209,6 +1255,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoqIDE/CoqIDE-Prefix.pch";
 				INFOPLIST_FILE = "CoqIDE/CoqIDE-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/CoqIDE/byterun\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
