@@ -268,9 +268,9 @@ let main () =
       let flags =
         match !runtime, !byte with
           | true, _ ->
-              "-make-runtime"
+              "-make-runtime " ^ " -linkall"
           | _,Some runtime ->
-              "-use-runtime " ^ runtime
+              "-use-runtime " ^ runtime ^ " -linkall"
           | _ ->
               Coq_config.coqrunbyteflags  ^ " -linkall" in
       let ocamlccustom = Printf.sprintf "%s %s "
@@ -291,7 +291,7 @@ let main () =
   try
     let args =
       if !runtime then
-        options @ (includes ()) @ copts @ tolink
+        options @ (includes ()) @ copts @  tolink
       else if !byte <> None then
         options @ (includes ()) @ tolink @ [ main_file ]
       else
