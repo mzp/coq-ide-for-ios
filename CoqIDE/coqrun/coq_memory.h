@@ -52,7 +52,6 @@ value coq_static_alloc(value size);  /* ML */
 value coq_static_free(value string); /* ML */
 
 value init_coq_vm(value unit); /* ML */
-value re_init_coq_vm(value unit); /* ML */
 
 void  realloc_coq_stack(asize_t required_space); 
 value get_coq_global_data(value unit); /* ML */

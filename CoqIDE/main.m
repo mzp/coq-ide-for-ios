@@ -43,11 +43,14 @@ char *fullp(NSString *relPath) {
 static void init() {
     const char* include = fullp(@"ocaml-3.12.0");
     const char* prog    = fullp(@"ocamlprog");
+    const char* coqlib  = fullp(@"coq-8.2pl2");
     const char* argv[] = {
         "ocamlrun",
         "-I",
         include,
         prog,
+        "-coqlib",
+        coqlib,
         NULL
     };
     caml_main((char**)argv);
