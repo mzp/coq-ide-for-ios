@@ -11,11 +11,11 @@
 #ifndef _COQ_MEMORY_
 #define _COQ_MEMORY_
 
-#include <caml/config.h>
-#include <caml/fail.h>
-#include <caml/misc.h>
-#include <caml/memory.h>
-#include <caml/mlvalues.h>
+#include <ocamlrun/byterun/config.h>
+#include <ocamlrun/byterun/fail.h>
+#include <ocamlrun/byterun/misc.h>
+#include <ocamlrun/byterun/memory.h>
+#include <ocamlrun/byterun/mlvalues.h>
 
 
 #define Coq_stack_size (4096 * sizeof(value))

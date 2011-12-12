@@ -12,7 +12,7 @@
 #ifndef _COQ_FIX_CODE_
 #define _COQ_FIX_CODE_
 
-#include <caml/mlvalues.h>
+#include <ocamlrun/byterun/mlvalues.h>
 void * coq_stat_alloc (asize_t sz);
 
 #ifdef THREADED_CODE

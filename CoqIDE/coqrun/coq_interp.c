@@ -22,7 +22,7 @@
 #include "coq_values.h" 
 
 /*spiwack : imports support functions for 64-bit integers */
-#include <caml/config.h>
+#include <ocamlrun/byterun/config.h>
 #ifdef ARCH_INT64_TYPE
 #include "int64_native.h"
 #else
@@ -61,7 +61,7 @@ sp is a local copy of the global variable extern_sp. */
 #    define coq_Jumptbl_base ((char *) 0)
 #    define coq_jumptbl_base ((char *) 0)
 #  endif
-#  ifdef DEBUG
+#  ifdef COQ_DEBUG
 #    define Next goto next_instr
 #  else
 #    define Next goto *(void *)(coq_jumptbl_base + *pc++)  
@@ -101,7 +101,7 @@ sp is a local copy of the global variable extern_sp. */
    several architectures.
 */
 
-#if defined(__GNUC__) && !defined(DEBUG)
+#if defined(__GNUC__) && !defined(COQ_DEBUG)
 #ifdef __mips__
 #define PC_REG asm("$16")
 #define SP_REG asm("$17")
@@ -170,15 +170,9 @@ value coq_interprete
 (code_t coq_pc, value coq_accu, value coq_env, long coq_extra_args)
 {
   /*Declaration des variables */
-#ifdef PC_REG
-  register code_t pc PC_REG;
-  register value * sp SP_REG;
-  register value accu ACCU_REG;
-#else
   register code_t pc;
   register value * sp;
   register value accu;
-#endif
 #if defined(THREADED_CODE) && defined(ARCH_SIXTYFOUR) && !defined(ARCH_CODE32)
 #ifdef JUMPTBL_BASE_REG
   register char * coq_jumptbl_base JUMPTBL_BASE_REG;

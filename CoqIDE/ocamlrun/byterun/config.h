@@ -96,7 +96,7 @@ typedef struct { uint32 l, h; } uint64, int64;
 /* We use threaded code interpretation if the compiler provides labels
    as first-class values (GCC 2.x). */
 
-#if defined(__GNUC__) && __GNUC__ >= 2 && !defined(DEBUG) && !defined (SHRINKED_GNUC) && !defined(CAML_JIT)
+#if defined(__GNUC__) && __GNUC__ >= 2 && !defined(OCAML_DEBUG) && !defined (SHRINKED_GNUC) && !defined(CAML_JIT)
 #define THREADED_CODE
 #endif
 
