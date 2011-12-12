@@ -1,0 +1,1 @@
+theories/Structures/DecidableTypeEx.vo theories/Structures/DecidableTypeEx.glob: theories/Structures/DecidableTypeEx.v theories/Structures/DecidableType.vo theories/Structures/OrderedType.vo theories/Structures/OrderedTypeEx.vo

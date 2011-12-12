@@ -1,0 +1,1 @@
+theories/Sorting/PermutSetoid.vo theories/Sorting/PermutSetoid.glob: theories/Sorting/PermutSetoid.v plugins/omega/Omega.vo theories/Relations/Relations.vo theories/Sets/Multiset.vo theories/Lists/SetoidList.vo theories/Sorting/Permutation.vo theories/Lists/TheoryList.vo

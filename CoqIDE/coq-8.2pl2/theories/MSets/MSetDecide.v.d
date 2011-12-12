@@ -1,0 +1,1 @@
+theories/MSets/MSetDecide.vo theories/MSets/MSetDecide.glob: theories/MSets/MSetDecide.v theories/Logic/Decidable.vo theories/Structures/DecidableTypeEx.vo theories/MSets/MSetFacts.vo theories/Setoids/Setoid.vo theories/MSets/MSetInterface.vo

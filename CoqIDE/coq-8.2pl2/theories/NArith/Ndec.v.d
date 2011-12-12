@@ -1,0 +1,1 @@
+theories/NArith/Ndec.vo theories/NArith/Ndec.glob: theories/NArith/Ndec.v theories/Bool/Bool.vo theories/Bool/Sumbool.vo theories/Arith/Arith.vo theories/NArith/BinPos.vo theories/NArith/BinNat.vo theories/NArith/Pnat.vo theories/NArith/Nnat.vo theories/NArith/Ndigits.vo

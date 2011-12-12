@@ -1,0 +1,1 @@
+plugins/omega/PreOmega.vo plugins/omega/PreOmega.glob: plugins/omega/PreOmega.v theories/Arith/Arith.vo theories/Arith/Max.vo theories/Arith/Min.vo theories/ZArith/ZArith_base.vo theories/NArith/NArith.vo theories/NArith/Nnat.vo

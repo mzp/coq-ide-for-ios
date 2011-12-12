@@ -1,0 +1,1 @@
+theories/Reals/Rtrigo_reg.vo theories/Reals/Rtrigo_reg.glob: theories/Reals/Rtrigo_reg.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/SeqSeries.vo theories/Reals/Rtrigo.vo theories/Reals/Ranalysis1.vo theories/Reals/PSeries_reg.vo

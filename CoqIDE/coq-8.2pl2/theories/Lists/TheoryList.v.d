@@ -1,0 +1,1 @@
+theories/Lists/TheoryList.vo theories/Lists/TheoryList.glob: theories/Lists/TheoryList.v theories/Lists/List.vo theories/Arith/Le.vo theories/Arith/Lt.vo theories/Arith/Minus.vo theories/Bool/DecBool.vo

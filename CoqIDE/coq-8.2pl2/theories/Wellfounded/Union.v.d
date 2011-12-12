@@ -1,0 +1,1 @@
+theories/Wellfounded/Union.vo theories/Wellfounded/Union.glob: theories/Wellfounded/Union.v theories/Relations/Relation_Operators.vo theories/Relations/Relation_Definitions.vo theories/Wellfounded/Transitive_Closure.vo

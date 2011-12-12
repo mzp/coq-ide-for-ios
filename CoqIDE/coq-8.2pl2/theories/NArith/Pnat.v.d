@@ -1,0 +1,1 @@
+theories/NArith/Pnat.vo theories/NArith/Pnat.glob: theories/NArith/Pnat.v theories/NArith/BinPos.vo theories/Arith/Le.vo theories/Arith/Lt.vo theories/Arith/Gt.vo theories/Arith/Plus.vo theories/Arith/Mult.vo theories/Arith/Minus.vo theories/Arith/Compare_dec.vo

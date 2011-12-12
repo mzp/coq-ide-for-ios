@@ -1,0 +1,1 @@
+theories/MSets/MSetEqProperties.vo theories/MSets/MSetEqProperties.glob: theories/MSets/MSetEqProperties.v theories/MSets/MSetProperties.vo theories/Bool/Zerob.vo theories/Bool/Sumbool.vo plugins/omega/Omega.vo theories/Structures/DecidableTypeEx.vo

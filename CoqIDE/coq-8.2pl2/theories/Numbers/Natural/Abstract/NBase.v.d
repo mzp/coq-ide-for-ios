@@ -1,0 +1,1 @@
+theories/Numbers/Natural/Abstract/NBase.vo theories/Numbers/Natural/Abstract/NBase.glob: theories/Numbers/Natural/Abstract/NBase.v theories/Logic/Decidable.vo theories/Numbers/Natural/Abstract/NAxioms.vo theories/Numbers/NatInt/NZProperties.vo

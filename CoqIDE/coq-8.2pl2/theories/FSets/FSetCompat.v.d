@@ -1,0 +1,1 @@
+theories/FSets/FSetCompat.vo theories/FSets/FSetCompat.glob: theories/FSets/FSetCompat.v theories/FSets/FSetInterface.vo theories/FSets/FSetFacts.vo theories/MSets/MSetInterface.vo theories/MSets/MSetFacts.vo

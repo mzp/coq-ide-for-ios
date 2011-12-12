@@ -1,0 +1,1 @@
+plugins/field/LegacyField.vo plugins/field/LegacyField.glob: plugins/field/LegacyField.v plugins/field/LegacyField_Compl.vo plugins/field/LegacyField_Theory.vo plugins/field/LegacyField_Tactic.vo plugins/field/field_plugin.cma

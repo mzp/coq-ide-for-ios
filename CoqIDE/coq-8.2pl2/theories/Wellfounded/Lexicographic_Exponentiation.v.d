@@ -1,0 +1,1 @@
+theories/Wellfounded/Lexicographic_Exponentiation.vo theories/Wellfounded/Lexicographic_Exponentiation.glob: theories/Wellfounded/Lexicographic_Exponentiation.v theories/Lists/List.vo theories/Relations/Relation_Operators.vo theories/Wellfounded/Transitive_Closure.vo

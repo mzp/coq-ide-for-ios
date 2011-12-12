@@ -1,0 +1,1 @@
+theories/Numbers/Cyclic/DoubleCyclic/DoubleSqrt.vo theories/Numbers/Cyclic/DoubleCyclic/DoubleSqrt.glob: theories/Numbers/Cyclic/DoubleCyclic/DoubleSqrt.v theories/ZArith/ZArith.vo theories/Numbers/BigNumPrelude.vo theories/Numbers/Cyclic/DoubleCyclic/DoubleType.vo theories/Numbers/Cyclic/DoubleCyclic/DoubleBase.vo

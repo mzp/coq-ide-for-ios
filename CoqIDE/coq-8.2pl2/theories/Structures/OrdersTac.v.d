@@ -1,0 +1,1 @@
+theories/Structures/OrdersTac.vo theories/Structures/OrdersTac.glob: theories/Structures/OrdersTac.v theories/Setoids/Setoid.vo theories/Classes/Morphisms.vo theories/Program/Basics.vo theories/Structures/Equalities.vo theories/Structures/Orders.vo

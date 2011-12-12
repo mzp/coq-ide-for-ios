@@ -1,0 +1,1 @@
+theories/NArith/Pminmax.vo theories/NArith/Pminmax.glob: theories/NArith/Pminmax.v theories/Structures/Orders.vo theories/NArith/BinPos.vo theories/NArith/Pnat.vo theories/NArith/POrderedType.vo theories/Structures/GenericMinMax.vo

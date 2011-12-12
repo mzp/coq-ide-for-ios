@@ -1,0 +1,1 @@
+plugins/ring/LegacyZArithRing.vo plugins/ring/LegacyZArithRing.glob: plugins/ring/LegacyZArithRing.v plugins/ring/LegacyArithRing.vo theories/ZArith/ZArith_base.vo theories/Logic/Eqdep_dec.vo plugins/ring/LegacyRing.vo

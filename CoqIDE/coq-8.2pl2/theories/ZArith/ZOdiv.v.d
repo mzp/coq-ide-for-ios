@@ -1,0 +1,1 @@
+theories/ZArith/ZOdiv.vo theories/ZArith/ZOdiv.glob: theories/ZArith/ZOdiv.v theories/NArith/BinPos.vo theories/NArith/BinNat.vo theories/NArith/Nnat.vo theories/ZArith/ZArith_base.vo plugins/romega/ROmega.vo plugins/setoid_ring/ZArithRing.vo theories/ZArith/ZOdiv_def.vo theories/ZArith/Zdiv.vo

@@ -1,0 +1,1 @@
+theories/Numbers/Cyclic/ZModulo/ZModulo.vo theories/Numbers/Cyclic/ZModulo/ZModulo.glob: theories/Numbers/Cyclic/ZModulo/ZModulo.v theories/Bool/Bool.vo theories/ZArith/ZArith.vo theories/ZArith/Znumtheory.vo theories/Numbers/BigNumPrelude.vo theories/Numbers/Cyclic/DoubleCyclic/DoubleType.vo theories/Numbers/Cyclic/Abstract/CyclicAxioms.vo

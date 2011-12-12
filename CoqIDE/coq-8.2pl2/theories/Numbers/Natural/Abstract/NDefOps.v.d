@@ -1,0 +1,1 @@
+theories/Numbers/Natural/Abstract/NDefOps.vo theories/Numbers/Natural/Abstract/NDefOps.glob: theories/Numbers/Natural/Abstract/NDefOps.v theories/Bool/Bool.vo theories/Classes/RelationPairs.vo theories/Numbers/Natural/Abstract/NStrongRec.vo

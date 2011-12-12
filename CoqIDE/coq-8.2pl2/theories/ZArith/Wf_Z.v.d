@@ -1,0 +1,1 @@
+theories/ZArith/Wf_Z.vo theories/ZArith/Wf_Z.glob: theories/ZArith/Wf_Z.v theories/ZArith/BinInt.vo theories/ZArith/Zcompare.vo theories/ZArith/Zorder.vo theories/ZArith/Znat.vo theories/ZArith/Zmisc.vo theories/Arith/Wf_nat.vo

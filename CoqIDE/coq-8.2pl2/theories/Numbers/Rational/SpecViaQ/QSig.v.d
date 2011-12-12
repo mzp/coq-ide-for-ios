@@ -1,0 +1,1 @@
+theories/Numbers/Rational/SpecViaQ/QSig.vo theories/Numbers/Rational/SpecViaQ/QSig.glob: theories/Numbers/Rational/SpecViaQ/QSig.v theories/QArith/QArith.vo theories/QArith/Qpower.vo theories/QArith/Qminmax.vo theories/Structures/Orders.vo theories/Classes/RelationPairs.vo theories/Structures/GenericMinMax.vo

@@ -1,0 +1,1 @@
+theories/Reals/Reals.vo theories/Reals/Reals.glob: theories/Reals/Reals.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/SeqSeries.vo theories/Reals/Rtrigo.vo theories/Reals/Ranalysis.vo theories/Reals/Integration.vo

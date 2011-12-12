@@ -1,0 +1,1 @@
+theories/ZArith/auxiliary.vo theories/ZArith/auxiliary.glob: theories/ZArith/auxiliary.v theories/Arith/Arith_base.vo theories/ZArith/BinInt.vo theories/ZArith/Zorder.vo theories/Logic/Decidable.vo theories/Arith/Peano_dec.vo theories/Arith/Compare_dec.vo

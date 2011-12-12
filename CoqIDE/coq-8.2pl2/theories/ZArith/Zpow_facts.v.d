@@ -1,0 +1,1 @@
+theories/ZArith/Zpow_facts.vo theories/ZArith/Zpow_facts.glob: theories/ZArith/Zpow_facts.v theories/ZArith/ZArith_base.vo plugins/setoid_ring/ZArithRing.vo theories/ZArith/Zcomplements.vo theories/ZArith/Zpower.vo theories/ZArith/Zdiv.vo theories/ZArith/Znumtheory.vo

@@ -1,0 +1,1 @@
+theories/Reals/Rgeom.vo theories/Reals/Rgeom.glob: theories/Reals/Rgeom.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/SeqSeries.vo theories/Reals/Rtrigo.vo theories/Reals/R_sqrt.vo

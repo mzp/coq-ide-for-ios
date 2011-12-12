@@ -1,0 +1,1 @@
+plugins/setoid_ring/Ring_base.vo plugins/setoid_ring/Ring_base.glob: plugins/setoid_ring/Ring_base.v plugins/quote/Quote.vo plugins/setoid_ring/newring_plugin.cma plugins/setoid_ring/Ring_theory.vo plugins/setoid_ring/Ring_tac.vo plugins/setoid_ring/InitialRing.vo

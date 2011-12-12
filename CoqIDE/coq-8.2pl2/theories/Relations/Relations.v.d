@@ -1,0 +1,1 @@
+theories/Relations/Relations.vo theories/Relations/Relations.glob: theories/Relations/Relations.v theories/Relations/Relation_Definitions.vo theories/Relations/Relation_Operators.vo theories/Relations/Operators_Properties.vo

@@ -1,0 +1,1 @@
+theories/Numbers/Natural/Peano/NPeano.vo theories/Numbers/Natural/Peano/NPeano.glob: theories/Numbers/Natural/Peano/NPeano.v theories/Arith/Arith.vo theories/Arith/MinMax.vo theories/Numbers/Natural/Abstract/NAxioms.vo theories/Numbers/Natural/Abstract/NProperties.vo theories/Numbers/Natural/Abstract/NDiv.vo

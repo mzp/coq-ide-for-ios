@@ -1,0 +1,1 @@
+theories/Reals/Rpower.vo theories/Reals/Rpower.glob: theories/Reals/Rpower.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/SeqSeries.vo theories/Reals/Rtrigo.vo theories/Reals/Ranalysis1.vo theories/Reals/Exp_prop.vo theories/Reals/Rsqrt_def.vo theories/Reals/R_sqrt.vo theories/Reals/MVT.vo theories/Reals/Ranalysis4.vo

@@ -1,0 +1,1 @@
+theories/Numbers/Natural/Abstract/NProperties.vo theories/Numbers/Natural/Abstract/NProperties.glob: theories/Numbers/Natural/Abstract/NProperties.v theories/Numbers/Natural/Abstract/NAxioms.vo theories/Numbers/Natural/Abstract/NSub.vo

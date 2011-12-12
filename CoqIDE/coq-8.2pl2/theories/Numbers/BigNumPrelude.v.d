@@ -1,0 +1,1 @@
+theories/Numbers/BigNumPrelude.vo theories/Numbers/BigNumPrelude.glob: theories/Numbers/BigNumPrelude.v plugins/setoid_ring/ArithRing.vo theories/ZArith/ZArith.vo theories/ZArith/Znumtheory.vo theories/ZArith/Zpow_facts.vo plugins/syntax/numbers_syntax_plugin.cma

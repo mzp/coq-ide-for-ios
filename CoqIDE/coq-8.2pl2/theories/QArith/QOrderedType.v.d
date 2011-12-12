@@ -1,0 +1,1 @@
+theories/QArith/QOrderedType.vo theories/QArith/QOrderedType.glob: theories/QArith/QOrderedType.v theories/QArith/QArith_base.vo theories/Structures/Equalities.vo theories/Structures/Orders.vo theories/Structures/OrdersTac.vo

@@ -1,0 +1,1 @@
+theories/ZArith/BinInt.vo theories/ZArith/BinInt.glob: theories/ZArith/BinInt.v theories/NArith/BinPos.vo theories/NArith/Pnat.vo theories/NArith/BinNat.vo theories/Arith/Plus.vo theories/Arith/Mult.vo

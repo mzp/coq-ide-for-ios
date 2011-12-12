@@ -1,0 +1,1 @@
+theories/Classes/Morphisms.vo theories/Classes/Morphisms.glob: theories/Classes/Morphisms.v theories/Program/Basics.vo theories/Program/Tactics.vo theories/Relations/Relation_Definitions.vo theories/Classes/RelationClasses.vo

@@ -1,0 +1,1 @@
+theories/Program/Program.vo theories/Program/Program.glob: theories/Program/Program.v theories/Program/Utils.vo theories/Program/Wf.vo theories/Program/Equality.vo theories/Program/Subset.vo theories/Program/Basics.vo theories/Program/Combinators.vo theories/Program/Syntax.vo

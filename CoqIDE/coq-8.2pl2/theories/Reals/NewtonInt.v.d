@@ -1,0 +1,1 @@
+theories/Reals/NewtonInt.vo theories/Reals/NewtonInt.glob: theories/Reals/NewtonInt.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/SeqSeries.vo theories/Reals/Rtrigo.vo theories/Reals/Ranalysis.vo

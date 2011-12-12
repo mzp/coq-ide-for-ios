@@ -1,0 +1,1 @@
+theories/Numbers/NatInt/NZOrder.vo theories/Numbers/NatInt/NZOrder.glob: theories/Numbers/NatInt/NZOrder.v theories/Numbers/NatInt/NZAxioms.vo theories/Numbers/NatInt/NZBase.vo theories/Logic/Decidable.vo theories/Structures/OrdersTac.vo

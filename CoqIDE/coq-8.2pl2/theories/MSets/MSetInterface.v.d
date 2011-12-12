@@ -1,0 +1,1 @@
+theories/MSets/MSetInterface.vo theories/MSets/MSetInterface.glob: theories/MSets/MSetInterface.v theories/Bool/Bool.vo theories/Lists/SetoidList.vo theories/Classes/RelationClasses.vo theories/Classes/Morphisms.vo theories/Classes/RelationPairs.vo theories/Structures/Equalities.vo theories/Structures/Orders.vo theories/Structures/OrdersFacts.vo

@@ -1,0 +1,1 @@
+theories/Logic/FunctionalExtensionality.vo theories/Logic/FunctionalExtensionality.glob: theories/Logic/FunctionalExtensionality.v

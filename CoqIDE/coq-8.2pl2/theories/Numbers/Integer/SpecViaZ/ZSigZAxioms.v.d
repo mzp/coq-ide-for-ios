@@ -1,0 +1,1 @@
+theories/Numbers/Integer/SpecViaZ/ZSigZAxioms.vo theories/Numbers/Integer/SpecViaZ/ZSigZAxioms.glob: theories/Numbers/Integer/SpecViaZ/ZSigZAxioms.v theories/ZArith/ZArith.vo theories/Numbers/Integer/Abstract/ZAxioms.vo theories/Numbers/Integer/Abstract/ZDivFloor.vo theories/Numbers/Integer/SpecViaZ/ZSig.vo

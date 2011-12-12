@@ -1,0 +1,1 @@
+theories/Structures/OrderedTypeEx.vo theories/Structures/OrderedTypeEx.glob: theories/Structures/OrderedTypeEx.v theories/Structures/OrderedType.vo theories/ZArith/ZArith.vo plugins/omega/Omega.vo theories/NArith/NArith.vo theories/NArith/Ndec.vo theories/Arith/Compare_dec.vo

@@ -1,0 +1,1 @@
+theories/Reals/Cos_plus.vo theories/Reals/Cos_plus.glob: theories/Reals/Cos_plus.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/SeqSeries.vo theories/Reals/Rtrigo_def.vo theories/Reals/Cos_rel.vo theories/Arith/Max.vo

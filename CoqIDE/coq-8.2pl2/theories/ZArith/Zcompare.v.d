@@ -1,0 +1,1 @@
+theories/ZArith/Zcompare.vo theories/ZArith/Zcompare.glob: theories/ZArith/Zcompare.v theories/NArith/BinPos.vo theories/ZArith/BinInt.vo theories/Arith/Lt.vo theories/Arith/Gt.vo theories/Arith/Plus.vo theories/Arith/Mult.vo

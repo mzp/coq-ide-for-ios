@@ -1,0 +1,1 @@
+theories/Numbers/Natural/Abstract/NDiv.vo theories/Numbers/Natural/Abstract/NDiv.glob: theories/Numbers/Natural/Abstract/NDiv.v theories/Numbers/Natural/Abstract/NAxioms.vo theories/Numbers/Natural/Abstract/NProperties.vo theories/Numbers/NatInt/NZDiv.vo

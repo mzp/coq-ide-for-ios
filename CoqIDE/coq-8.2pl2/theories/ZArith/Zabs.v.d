@@ -1,0 +1,1 @@
+theories/ZArith/Zabs.vo theories/ZArith/Zabs.glob: theories/ZArith/Zabs.v theories/Arith/Arith_base.vo theories/NArith/BinPos.vo theories/ZArith/BinInt.vo theories/ZArith/Zorder.vo theories/ZArith/Zmax.vo theories/ZArith/Znat.vo theories/ZArith/ZArith_dec.vo

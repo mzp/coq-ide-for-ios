@@ -1,0 +1,1 @@
+theories/Numbers/NatInt/NZDomain.vo theories/Numbers/NatInt/NZDomain.glob: theories/Numbers/NatInt/NZDomain.v theories/Numbers/NumPrelude.vo theories/Numbers/NatInt/NZAxioms.vo theories/Numbers/NatInt/NZBase.vo theories/Numbers/NatInt/NZOrder.vo theories/Numbers/NatInt/NZAddOrder.vo theories/Arith/Plus.vo theories/Arith/Minus.vo

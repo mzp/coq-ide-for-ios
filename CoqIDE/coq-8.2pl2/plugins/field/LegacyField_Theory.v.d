@@ -1,0 +1,1 @@
+plugins/field/LegacyField_Theory.vo plugins/field/LegacyField_Theory.glob: plugins/field/LegacyField_Theory.v theories/Lists/List.vo theories/Arith/Peano_dec.vo plugins/ring/LegacyRing.vo plugins/field/LegacyField_Compl.vo

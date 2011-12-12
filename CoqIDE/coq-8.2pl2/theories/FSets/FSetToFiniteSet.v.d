@@ -1,0 +1,1 @@
+theories/FSets/FSetToFiniteSet.vo theories/FSets/FSetToFiniteSet.glob: theories/FSets/FSetToFiniteSet.v theories/Sets/Ensembles.vo theories/Sets/Finite_sets.vo theories/FSets/FSetInterface.vo theories/FSets/FSetProperties.vo theories/Structures/OrderedTypeEx.vo theories/Structures/DecidableTypeEx.vo

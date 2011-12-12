@@ -1,0 +1,1 @@
+plugins/rtauto/Rtauto.vo plugins/rtauto/Rtauto.glob: plugins/rtauto/Rtauto.v theories/Lists/List.vo plugins/rtauto/Bintree.vo theories/Bool/Bool.vo plugins/rtauto/rtauto_plugin.cma theories/NArith/BinPos.vo

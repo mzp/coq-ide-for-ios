@@ -1,0 +1,1 @@
+theories/FSets/FSetProperties.vo theories/FSets/FSetProperties.glob: theories/FSets/FSetProperties.v theories/FSets/FSetInterface.vo theories/Structures/DecidableTypeEx.vo theories/FSets/FSetFacts.vo theories/FSets/FSetDecide.vo

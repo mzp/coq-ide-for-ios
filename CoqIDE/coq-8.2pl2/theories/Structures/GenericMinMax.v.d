@@ -1,0 +1,1 @@
+theories/Structures/GenericMinMax.vo theories/Structures/GenericMinMax.glob: theories/Structures/GenericMinMax.v theories/Structures/Orders.vo theories/Structures/OrdersTac.vo theories/Structures/OrdersFacts.vo theories/Setoids/Setoid.vo theories/Classes/Morphisms.vo theories/Program/Basics.vo

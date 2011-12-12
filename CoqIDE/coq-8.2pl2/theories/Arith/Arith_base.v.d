@@ -1,0 +1,1 @@
+theories/Arith/Arith_base.vo theories/Arith/Arith_base.glob: theories/Arith/Arith_base.v theories/Arith/Le.vo theories/Arith/Lt.vo theories/Arith/Plus.vo theories/Arith/Gt.vo theories/Arith/Minus.vo theories/Arith/Mult.vo theories/Arith/Between.vo theories/Arith/Peano_dec.vo theories/Arith/Compare_dec.vo theories/Arith/Factorial.vo theories/Arith/EqNat.vo theories/Arith/Wf_nat.vo

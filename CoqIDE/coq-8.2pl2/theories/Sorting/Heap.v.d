@@ -1,0 +1,1 @@
+theories/Sorting/Heap.vo theories/Sorting/Heap.glob: theories/Sorting/Heap.v theories/Lists/List.vo theories/Sets/Multiset.vo theories/Sorting/PermutSetoid.vo theories/Relations/Relations.vo theories/Sorting/Sorting.vo theories/Classes/Morphisms.vo

@@ -1,0 +1,1 @@
+theories/Numbers/Integer/Abstract/ZBase.vo theories/Numbers/Integer/Abstract/ZBase.glob: theories/Numbers/Integer/Abstract/ZBase.v theories/Logic/Decidable.vo theories/Numbers/Integer/Abstract/ZAxioms.vo theories/Numbers/NatInt/NZProperties.vo

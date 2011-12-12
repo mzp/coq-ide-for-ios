@@ -1,0 +1,1 @@
+plugins/setoid_ring/Ring_polynom.vo plugins/setoid_ring/Ring_polynom.glob: plugins/setoid_ring/Ring_polynom.v theories/Setoids/Setoid.vo plugins/setoid_ring/BinList.vo theories/NArith/BinPos.vo theories/NArith/BinNat.vo theories/ZArith/BinInt.vo plugins/setoid_ring/Ring_theory.vo

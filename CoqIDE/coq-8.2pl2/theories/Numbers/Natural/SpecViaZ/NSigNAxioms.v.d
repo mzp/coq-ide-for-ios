@@ -1,0 +1,1 @@
+theories/Numbers/Natural/SpecViaZ/NSigNAxioms.vo theories/Numbers/Natural/SpecViaZ/NSigNAxioms.glob: theories/Numbers/Natural/SpecViaZ/NSigNAxioms.v theories/ZArith/ZArith.vo theories/NArith/Nnat.vo theories/Numbers/Natural/Abstract/NAxioms.vo theories/Numbers/Natural/Abstract/NDiv.vo theories/Numbers/Natural/SpecViaZ/NSig.vo

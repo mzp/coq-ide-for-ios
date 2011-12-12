@@ -1,0 +1,1 @@
+theories/ZArith/Zcomplements.vo theories/ZArith/Zcomplements.glob: theories/ZArith/Zcomplements.v plugins/setoid_ring/ZArithRing.vo theories/ZArith/ZArith_base.vo plugins/omega/Omega.vo theories/Arith/Wf_nat.vo theories/Lists/List.vo
