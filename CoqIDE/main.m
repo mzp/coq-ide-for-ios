@@ -62,9 +62,17 @@ int main(int argc, char *argv[])
 {
     @autoreleasepool {
         myloadingBundle = [NSBundle mainBundle];
+        pwd2 = fullp(@"Icon.png");
+        char *rslash = strrchr(pwd2, '/');
+        if (rslash)
+        {
+            rslash[1] = 0;
+            pwd = strdup(pwd2);
+            *rslash = 0;
+            rslash = strrchr(pwd2, '/');
+            if (rslash) rslash[1] = 0;
+        }
         init();
-
-        caml_callback(*caml_named_value("answer"), Val_unit);
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
