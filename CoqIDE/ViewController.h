@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "Coq.h"
 @interface ViewController : UIViewController
-
+{
+    Coq* coq;
+    IBOutlet UITextView *code;
+}
+- (IBAction)eval:(id)sender;
 @end

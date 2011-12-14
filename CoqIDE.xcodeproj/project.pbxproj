@@ -198,6 +198,7 @@
 /* Begin PBXFileReference section */
 		130B29791499635C00D1FF7C /* Coq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coq.h; sourceTree = "<group>"; };
 		130B297A1499635C00D1FF7C /* Coq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coq.m; sourceTree = "<group>"; };
+		130B297D149964B700D1FF7C /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
 		13334D071496BC7400847078 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		13334D0A1496BCEA00847078 /* coq-8.2pl2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "coq-8.2pl2"; sourceTree = "<group>"; };
 		1379FC8D1496368D00E7D539 /* coq_fix_code.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coq_fix_code.c; sourceTree = "<group>"; };
@@ -532,6 +533,7 @@
 				1379FC8C1496368D00E7D539 /* coqrun */,
 				13BB2EBB1492428400DE58A7 /* ocamlrun */,
 				13939BBC14923EC7005C07F2 /* AppDelegate.h */,
+				130B297D149964B700D1FF7C /* util.h */,
 				13939BBD14923EC7005C07F2 /* AppDelegate.m */,
 				13939BBF14923EC7005C07F2 /* MainStoryboard.storyboard */,
 				13939BC214923EC7005C07F2 /* ViewController.h */,

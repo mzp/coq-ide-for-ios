@@ -12,11 +12,11 @@
 #import "AppDelegate.h"
 #include "ocamlrun/byterun/glue.h"
 #include "ocamlrun/byterun/callback.h"
+#include "util.h"
 
 char *pwd = 0;
 char *pwd2 = 0;
 NSBundle                *myloadingBundle = nil;
-char* fullp(NSString*);
 
 char *fullp(NSString *relPath) {
     char realp[MAXPATHLEN];
@@ -40,24 +40,6 @@ char *fullp(NSString *relPath) {
     }
 }
 
-static void init() {
-    const char* include = fullp(@"ocaml-3.12.0");
-    const char* prog    = fullp(@"ocamlprog");
-    const char* coqlib  = fullp(@"coq-8.2pl2");
-    const char* argv[] = {
-        "ocamlrun",
-        "-I",
-        include,
-        prog,
-        "-coqlib",
-        coqlib,
-        NULL
-    };
-    caml_main((char**)argv);
-    free((char*)include);
-    free((char*)prog);
-}
-
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
@@ -72,7 +54,6 @@ int main(int argc, char *argv[])
             rslash = strrchr(pwd2, '/');
             if (rslash) rslash[1] = 0;
         }
-        init();
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

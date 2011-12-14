@@ -47,7 +47,7 @@ let eval s =
           Coq.interp true s in
           Coq.push_phrase cmd_stack reset_info ()
 
-let rep s =
+let eval s =
   print_endline s;
   print_endline "=== mode";
   print_endline @@ mode ();
@@ -60,18 +60,4 @@ let rep s =
 
 let start () =
   ignore @@ Coq.init ();
-  List.iter rep [
-    "Definition x := 42.";
-    "$undo";
-    "Definition x := 41.";
-    "Definition y := 41.";
-    "$undo2";
-    "Definition x := 40.";
-    "Goal forall A, A -> A.";
-    "Proof.";
-    "intros.";
-    "assumption.";
-    "Qed."
-  ];
-  print_endline @@ mode ()
-
+  Callback.register "eval" eval
