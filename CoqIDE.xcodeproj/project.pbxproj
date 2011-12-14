@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130B297B1499635C00D1FF7C /* Coq.m in Sources */ = {isa = PBXBuildFile; fileRef = 130B297A1499635C00D1FF7C /* Coq.m */; };
 		13334D081496BC7400847078 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 13334D071496BC7400847078 /* Icon.png */; };
 		13334D0B1496BCEA00847078 /* coq-8.2pl2 in Resources */ = {isa = PBXBuildFile; fileRef = 13334D0A1496BCEA00847078 /* coq-8.2pl2 */; };
 		1379FC9A1496368D00E7D539 /* coq_fix_code.c in Sources */ = {isa = PBXBuildFile; fileRef = 1379FC8D1496368D00E7D539 /* coq_fix_code.c */; };
@@ -195,6 +196,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130B29791499635C00D1FF7C /* Coq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coq.h; sourceTree = "<group>"; };
+		130B297A1499635C00D1FF7C /* Coq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coq.m; sourceTree = "<group>"; };
 		13334D071496BC7400847078 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		13334D0A1496BCEA00847078 /* coq-8.2pl2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "coq-8.2pl2"; sourceTree = "<group>"; };
 		1379FC8D1496368D00E7D539 /* coq_fix_code.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coq_fix_code.c; sourceTree = "<group>"; };
@@ -534,6 +537,8 @@
 				13939BC214923EC7005C07F2 /* ViewController.h */,
 				13939BC314923EC7005C07F2 /* ViewController.m */,
 				13939BB414923EC7005C07F2 /* Supporting Files */,
+				130B29791499635C00D1FF7C /* Coq.h */,
+				130B297A1499635C00D1FF7C /* Coq.m */,
 			);
 			path = CoqIDE;
 			sourceTree = "<group>";
@@ -1146,6 +1151,7 @@
 				1379FC9B1496368D00E7D539 /* coq_interp.c in Sources */,
 				1379FC9C1496368D00E7D539 /* coq_memory.c in Sources */,
 				1379FC9D1496368D00E7D539 /* coq_values.c in Sources */,
+				130B297B1499635C00D1FF7C /* Coq.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
