@@ -29,6 +29,7 @@
 {
     code = nil;
     message = nil;
+    proof_tree = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -65,5 +66,9 @@
     NSString* text = [code text];
     [coq eval: text];  
     [message setText:[coq message]];
+   // NSLog(@"%@", [coq isProofMode]);
+    if([coq isProofMode]){
+        [proof_tree setText:[coq goal]];
+    }
 }
 @end

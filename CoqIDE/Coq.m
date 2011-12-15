@@ -59,4 +59,15 @@ int bas_write(int fd, char *buf, int len) {
 -(NSString*)message {
     return buffer;
 }
+
+-(BOOL)isProofMode {
+    value b = caml_callback(*caml_named_value("is_proof_mode"), Val_unit);
+    return (Bool_val(b) != 0);
+}
+
+-(NSString*)goal {
+    value s = caml_callback(*caml_named_value("get_goal"), Val_unit);
+    const char* chr = String_val(s);
+    return [NSString stringWithUTF8String: chr];
+}
 @end

@@ -13,6 +13,7 @@
     Coq* coq;
     IBOutlet UITextView *message;
     IBOutlet UITextView *code;
+    IBOutlet UITextView *proof_tree;
 }
 - (IBAction)eval:(id)sender;
 @end

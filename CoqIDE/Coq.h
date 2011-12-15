@@ -12,5 +12,7 @@
 -(id)init;
 -(void)eval: (NSString*)code;
 -(NSString*)message;
+-(BOOL)isProofMode;
+-(NSString*)goal;
 @end
 
