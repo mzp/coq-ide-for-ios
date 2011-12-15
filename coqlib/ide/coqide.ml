@@ -31,32 +31,9 @@ let show_goal () =
           print_endline "Proof completed."
 
 let eval s =
-  match s with
-    | "$undo" ->
-        let _,coq =
-          Stack.pop cmd_stack in
-          Coq.rewind [coq] cmd_stack
-    | "$undo2" ->
-        let _,x =
-          Stack.pop cmd_stack in
-        let _,y =
-          Stack.pop cmd_stack in
-          Coq.rewind [x;y] cmd_stack
-    | _ ->
-        let reset_info =
-          Coq.interp true s in
-          Coq.push_phrase cmd_stack reset_info ()
-
-let eval s =
-  print_endline s;
-  print_endline "=== mode";
-  print_endline @@ mode ();
-  print_endline "=== interp";
-  eval s;
-  print_endline "=== goal:";
-  print_endline @@ mode ();
-  show_goal ();
-  print_endline "------------------------------\n"
+  let reset_info =
+    Coq.interp true s in
+    Coq.push_phrase cmd_stack reset_info ()
 
 let start () =
   ignore @@ Coq.init ();

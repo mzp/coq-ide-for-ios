@@ -8,12 +8,28 @@
 
 #import "Coq.h"
 #include "util.h"
+#include "ocamlrun/byterun/alloc.h"
+#include "ocamlrun/byterun/mlvalues.h"
+#include "ocamlrun/byterun/callback.h"
+#undef alloc
 #include "ocamlrun/byterun/glue.h"
+
+static NSMutableString* buffer = nil;
+
+int bas_write(int fd, char *buf, int len) {
+    if (fd == fileno(stdout)) {
+        buf[len] = '\0';
+        [buffer appendFormat:@"%s", buf];
+    }
+    return write(fd, buf, len);
+}
 
 @implementation Coq
 - (id)init {
     self = [super init];
     if (self) {
+        buffer = [[NSMutableString alloc] init];
+
         const char* include = fullp(@"ocaml-3.12.0");
         const char* prog    = fullp(@"ocamlprog");
         const char* coqlib  = fullp(@"coq-8.2pl2");
@@ -32,5 +48,15 @@
         free((char*)coqlib);
     }
     return self;
+}
+
+-(void)eval: (NSString*)code {
+    const char* s = [code UTF8String];
+    [buffer setString: @""];
+    caml_callback(*caml_named_value("eval"),caml_copy_string(s));
+}
+
+-(NSString*)message {
+    return buffer;
 }
 @end

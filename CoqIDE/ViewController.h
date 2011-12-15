@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 {
     Coq* coq;
+    IBOutlet UITextView *message;
     IBOutlet UITextView *code;
 }
 - (IBAction)eval:(id)sender;

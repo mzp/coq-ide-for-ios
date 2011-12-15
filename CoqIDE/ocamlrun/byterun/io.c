@@ -160,7 +160,7 @@ static int do_write(int fd, char *p, int n)
 
 again:
   caml_enter_blocking_section();
-  retcode = write(fd, p, n);
+  retcode = bas_write(fd, p, n);
   caml_leave_blocking_section();
   if (retcode == -1) {
     if (errno == EINTR) goto again;

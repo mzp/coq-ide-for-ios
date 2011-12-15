@@ -8,11 +8,6 @@
 
 #import "ViewController.h"
 
-#include "ocamlrun/byterun/alloc.h"
-#include "ocamlrun/byterun/mlvalues.h"
-#include "ocamlrun/byterun/callback.h"
-#undef alloc
-
 @implementation ViewController
 
 - (void)didReceiveMemoryWarning
@@ -33,6 +28,7 @@
 - (void)viewDidUnload
 {
     code = nil;
+    message = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -66,7 +62,8 @@
 
 - (IBAction)eval:(id)sender 
 {
-    const char* s = [[code text] UTF8String];
-    caml_callback(*caml_named_value("eval"),caml_copy_string(s));
+    NSString* text = [code text];
+    [coq eval: text];  
+    [message setText:[coq message]];
 }
 @end
