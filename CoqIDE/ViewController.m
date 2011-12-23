@@ -23,6 +23,7 @@
     [super viewDidLoad];    
 	// Do any additional setup after loading the view, typically from a nib.
     coq = [[Coq alloc] init];
+    currentPos = 0;
 }
 
 - (void)viewDidUnload
@@ -30,6 +31,7 @@
     code = nil;
     message = nil;
     proof_tree = nil;
+    currentLineLabel = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -61,12 +63,21 @@
     return YES;
 }
 
+- (NSString*)nextCommand {
+    NSString* all = [code text];
+    NSString* rest = [all substringWithRange: NSMakeRange(currentPos, [all length] - currentPos)];
+    NSRange range = [rest rangeOfString:@"."];
+    currentPos += range.location + range.length;
+    return [rest substringWithRange: NSMakeRange(0,range.location+range.length)];
+}
+
 - (IBAction)eval:(id)sender 
 {
-    NSString* text = [code text];
-    [coq eval: text];  
+    NSString* text = [self nextCommand];
+    NSLog(@"next command: %@", text);
+    [coq eval: text];
+    [currentLineLabel setText:[NSString stringWithFormat:@"%d", currentPos]];
     [message setText:[coq message]];
-   // NSLog(@"%@", [coq isProofMode]);
     if([coq isProofMode]){
         [proof_tree setText:[coq goal]];
     }

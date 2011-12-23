@@ -11,9 +11,11 @@
 @interface ViewController : UIViewController
 {
     Coq* coq;
+    int currentPos;
     IBOutlet UITextView *message;
     IBOutlet UITextView *code;
     IBOutlet UITextView *proof_tree;
+    IBOutlet UILabel *currentLineLabel;
 }
 - (IBAction)eval:(id)sender;
 @end
