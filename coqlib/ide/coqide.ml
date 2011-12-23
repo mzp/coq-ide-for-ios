@@ -21,7 +21,7 @@ let string_of_goal (hyps, concl) =
     List.map (fun ((_,_,_,(s,_))) -> s) hyps in
   let (_,_,_,s) =
     concl in
-    List.fold_left (Printf.sprintf "%s\n%s") "" @@ hs @ [ s]
+    List.fold_left (Printf.sprintf "%s\n%s") "" @@ hs @ ["============================"; " " ^ s]
 
 let get_goal () =
     try
