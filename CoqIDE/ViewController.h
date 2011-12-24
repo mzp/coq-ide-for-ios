@@ -8,15 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "Coq.h"
+#import "EGOTextView.h"
 @interface ViewController : UIViewController
 {
     Coq* coq;
     int currentPos;
-    IBOutlet UILabel *filenameLabel;
-    IBOutlet UITextView *message;
-    IBOutlet UITextView *code;
-    IBOutlet UITextView *proof_tree;
-    IBOutlet UILabel *currentLineLabel;
+    __weak IBOutlet UILabel *filenameLabel;
+    __weak IBOutlet UITextView *message;
+    __weak IBOutlet EGOTextView *code;
+    __weak IBOutlet UITextView *proof_tree;
+    __weak IBOutlet UILabel *currentLineLabel;
 }
 - (IBAction)eval:(id)sender;
 - (IBAction)reset:(id)sender;

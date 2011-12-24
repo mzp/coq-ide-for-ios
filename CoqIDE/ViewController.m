@@ -22,7 +22,7 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];    
+    [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     coq = [[Coq alloc] init];
 
@@ -94,6 +94,12 @@
 
 - (void)updateDisplay {
     [currentLineLabel setText:[NSString stringWithFormat:@"%d", currentPos]];
+
+    NSMutableAttributedString *string = [code.attributedString mutableCopy];
+    [string addAttribute:(NSString*)kCTForegroundColorAttributeName value:[UIColor brownColor] range:NSMakeRange(0,currentPos)];
+    [string removeAttribute:(NSString*)kCTForegroundColorAttributeName range:NSMakeRange(currentPos, [string length] - currentPos)];
+    code.attributedString = string;
+
     [message setText:[coq message]];
     if([coq isProofMode]) {
         [proof_tree setText:[coq goal]];
@@ -102,7 +108,7 @@
     }
 }
 
-- (IBAction)eval:(id)sender 
+- (IBAction)eval:(id)sender
 {
     NSString* text = [self nextCommand];
     if(text != nil) {
@@ -136,7 +142,6 @@
     [filenameLabel setText: [formatter stringFromDate:now]];
 
     [code setText:@"(* demo file *)\nCheck 42."];
-
     [self reset:sender];
 }
 

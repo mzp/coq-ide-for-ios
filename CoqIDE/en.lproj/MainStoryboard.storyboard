@@ -125,11 +125,16 @@
                                     <action selector="create:" destination="2" eventType="touchUpInside" id="zPz-a5-7gL"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" id="YdL-yQ-I8K" customClass="EGOTextView">
+                                <rect key="frame" x="0.0" y="65" width="768" height="525"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="code" destination="ihn-CU-CgV" id="9eh-nT-jf8"/>
+                        <outlet property="code" destination="YdL-yQ-I8K" id="vya-OP-Y3L"/>
                         <outlet property="currentLineLabel" destination="FPA-5F-mI3" id="RFu-H7-rRk"/>
                         <outlet property="filenameLabel" destination="EFH-Hh-4Ah" id="fqy-aj-8GG"/>
                         <outlet property="message" destination="jJq-sw-v0P" id="rPZ-k4-Rkm"/>
@@ -137,7 +142,7 @@
                     </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="-167" y="-540"/>
+            <point key="canvasLocation" x="-173" y="-446"/>
         </scene>
         <scene sceneID="LzS-8I-bj8">
             <objects>
