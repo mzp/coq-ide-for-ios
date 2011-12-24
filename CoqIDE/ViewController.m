@@ -25,7 +25,22 @@
     [super viewDidLoad];    
 	// Do any additional setup after loading the view, typically from a nib.
     coq = [[Coq alloc] init];
-    currentPos = 0;
+
+    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+    [nc addObserver:self
+           selector:@selector(handleTextChange:)
+               name:UITextViewTextDidChangeNotification
+             object:nil];
+
+    [self create:nil];
+}
+
+- (void)handleTextChange:(id)sender{
+    NSString* document = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    NSString* path = [NSString stringWithFormat:@"%@/%@" , document, [filenameLabel text]];
+    NSLog(@"write to %@", path);
+    NSData* data = [[code text] dataUsingEncoding:NSUTF8StringEncoding];
+    [data writeToFile:path atomically:YES];
 }
 
 - (void)viewDidUnload
@@ -34,6 +49,7 @@
     message = nil;
     proof_tree = nil;
     currentLineLabel = nil;
+    filenameLabel = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -101,6 +117,8 @@
 
 - (IBAction)reset:(id)sender {
     [coq reset];
+    [message setText:@""];
+    [proof_tree setText:@""];
     currentPos = 0;
     [self updateDisplay];
 }
@@ -111,12 +129,15 @@
     [self updateDisplay];
 }
 
-- (IBAction)save:(id)sender {
-    NSString* document = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    NSString* path = [NSString stringWithFormat:@"%@/proof.v" , document];
-    NSLog(@"write to %@", path);
-    NSData* data = [[code text] dataUsingEncoding:NSUTF8StringEncoding];
-    [data writeToFile:path atomically:YES];
+- (IBAction)create:(id)sender {
+    NSDate *now = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyyMMdd_HHmmss.'v'"];
+    [filenameLabel setText: [formatter stringFromDate:now]];
+
+    [code setText:@"(* demo file *)\nCheck 42."];
+
+    [self reset:sender];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -137,6 +158,9 @@
                           [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"],
                           name];
 	if([fileManager fileExistsAtPath:filePath]) {
+        [self reset:self];
+
+        [filenameLabel setText: name];
 		NSData *data = [NSData dataWithContentsOfFile:filePath];
 		NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         [code setText:str];

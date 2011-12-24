@@ -12,6 +12,7 @@
 {
     Coq* coq;
     int currentPos;
+    IBOutlet UILabel *filenameLabel;
     IBOutlet UITextView *message;
     IBOutlet UITextView *code;
     IBOutlet UITextView *proof_tree;
@@ -20,7 +21,7 @@
 - (IBAction)eval:(id)sender;
 - (IBAction)reset:(id)sender;
 - (IBAction)undo:(id)sender;
-- (IBAction)save:(id)sender;
+- (IBAction)create:(id)sender;
 
 @property (strong, nonatomic) UIStoryboardPopoverSegue* popSegue;
 @end
