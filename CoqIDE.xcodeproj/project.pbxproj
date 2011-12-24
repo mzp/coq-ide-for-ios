@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		130B297B1499635C00D1FF7C /* Coq.m in Sources */ = {isa = PBXBuildFile; fileRef = 130B297A1499635C00D1FF7C /* Coq.m */; };
+		13148EBF14A5AA7C001CE90F /* FileSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13148EBD14A5AA7C001CE90F /* FileSelectView.m */; };
 		13334D081496BC7400847078 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 13334D071496BC7400847078 /* Icon.png */; };
 		13334D0B1496BCEA00847078 /* coq-8.2pl2 in Resources */ = {isa = PBXBuildFile; fileRef = 13334D0A1496BCEA00847078 /* coq-8.2pl2 */; };
 		1379FC9A1496368D00E7D539 /* coq_fix_code.c in Sources */ = {isa = PBXBuildFile; fileRef = 1379FC8D1496368D00E7D539 /* coq_fix_code.c */; };
@@ -199,6 +200,8 @@
 		130B29791499635C00D1FF7C /* Coq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coq.h; sourceTree = "<group>"; };
 		130B297A1499635C00D1FF7C /* Coq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coq.m; sourceTree = "<group>"; };
 		130B297D149964B700D1FF7C /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		13148EBC14A5AA7C001CE90F /* FileSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileSelectView.h; sourceTree = "<group>"; };
+		13148EBD14A5AA7C001CE90F /* FileSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileSelectView.m; sourceTree = "<group>"; };
 		13334D071496BC7400847078 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		13334D0A1496BCEA00847078 /* coq-8.2pl2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "coq-8.2pl2"; sourceTree = "<group>"; };
 		1379FC8D1496368D00E7D539 /* coq_fix_code.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = coq_fix_code.c; sourceTree = "<group>"; };
@@ -536,6 +539,8 @@
 				130B297D149964B700D1FF7C /* util.h */,
 				13939BBD14923EC7005C07F2 /* AppDelegate.m */,
 				13939BBF14923EC7005C07F2 /* MainStoryboard.storyboard */,
+				13148EBC14A5AA7C001CE90F /* FileSelectView.h */,
+				13148EBD14A5AA7C001CE90F /* FileSelectView.m */,
 				13939BC214923EC7005C07F2 /* ViewController.h */,
 				13939BC314923EC7005C07F2 /* ViewController.m */,
 				13939BB414923EC7005C07F2 /* Supporting Files */,
@@ -1154,6 +1159,7 @@
 				1379FC9C1496368D00E7D539 /* coq_memory.c in Sources */,
 				1379FC9D1496368D00E7D539 /* coq_values.c in Sources */,
 				130B297B1499635C00D1FF7C /* Coq.m in Sources */,
+				13148EBF14A5AA7C001CE90F /* FileSelectView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,8 @@
 
 @implementation ViewController
 
+@synthesize popSegue;
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -108,4 +110,37 @@
     currentPos = pos;
     [self updateDisplay];
 }
+
+- (IBAction)save:(id)sender {
+    NSString* document = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
+    NSString* path = [NSString stringWithFormat:@"%@/proof.v" , document];
+    NSLog(@"write to %@", path);
+    NSData* data = [[code text] dataUsingEncoding:NSUTF8StringEncoding];
+    [data writeToFile:path atomically:YES];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    self.popSegue = (UIStoryboardPopoverSegue*)segue;
+    [[segue destinationViewController] setDelegate:self];
+}
+
+- (void)select:(NSString*)name
+{
+    if ([self.popSegue.popoverController isPopoverVisible])
+    {
+        [self.popSegue.popoverController dismissPopoverAnimated:YES];
+    }
+
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+	NSString *filePath = [NSString stringWithFormat:@"%@/%@" ,
+                          [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"],
+                          name];
+	if([fileManager fileExistsAtPath:filePath]) {
+		NSData *data = [NSData dataWithContentsOfFile:filePath];
+		NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+        [code setText:str];
+    }
+}
+
 @end

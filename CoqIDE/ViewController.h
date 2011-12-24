@@ -20,4 +20,7 @@
 - (IBAction)eval:(id)sender;
 - (IBAction)reset:(id)sender;
 - (IBAction)undo:(id)sender;
+- (IBAction)save:(id)sender;
+
+@property (strong, nonatomic) UIStoryboardPopoverSegue* popSegue;
 @end
