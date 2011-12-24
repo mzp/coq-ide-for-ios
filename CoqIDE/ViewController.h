@@ -19,4 +19,5 @@
 }
 - (IBAction)eval:(id)sender;
 - (IBAction)reset:(id)sender;
+- (IBAction)undo:(id)sender;
 @end

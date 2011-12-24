@@ -50,11 +50,16 @@ int bas_write(int fd, char *buf, int len) {
     return self;
 }
 
--(BOOL)eval: (NSString*)code {
+-(BOOL)eval: (NSString*)code info:(int)info{
     const char* s = [code UTF8String];
     [buffer setString: @""];
-    value ret = caml_callback(*caml_named_value("eval"),caml_copy_string(s));
+    value ret = caml_callback2(*caml_named_value("eval"),caml_copy_string(s), Val_int(info));
     return Bool_val(ret);
+}
+
+-(int)undo {
+    int ret = caml_callback(*caml_named_value("undo"),Val_unit);
+    return Int_val(ret);
 }
 
 -(NSString*)message {

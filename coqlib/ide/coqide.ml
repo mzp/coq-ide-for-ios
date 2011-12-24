@@ -1,6 +1,6 @@
 let (@@) f g = f g
 
-type ide_info = unit
+type ide_info = int
 let cmd_stack : (ide_info * Coq.reset_info) Stack.t =
   Stack.create ()
 
@@ -33,11 +33,11 @@ let get_goal () =
         | None ->
             "Proof completed."
 
-let eval s =
+let eval s info =
   try
     let reset_info =
       Coq.interp true s in
-      Coq.push_phrase cmd_stack reset_info ();
+      Coq.push_phrase cmd_stack reset_info info;
       true
   with e ->
     let (msg,_) =
@@ -45,14 +45,23 @@ let eval s =
       print_endline msg;
       false
 
+let undo () =
+  if Stack.is_empty cmd_stack then
+    0
+  else
+    let ret,coq =
+      Stack.pop cmd_stack in
+      Coq.rewind [coq] cmd_stack;
+      ret
+
 let reset () =
   Stack.clear cmd_stack;
   Coq.reset_initial ()
-
 
 let start () =
   ignore @@ Coq.init ();
   Callback.register "is_proof_mode" is_proof_mode;
   Callback.register "get_goal"      get_goal;
   Callback.register "eval"          eval;
+  Callback.register "undo"          undo;
   Callback.register "reset"         reset

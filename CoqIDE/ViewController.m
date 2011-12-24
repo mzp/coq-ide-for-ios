@@ -89,7 +89,7 @@
     NSString* text = [self nextCommand];
     if(text != nil) {
         NSLog(@"next command: %@", text);
-        BOOL b = [coq eval: text];
+        BOOL b = [coq eval: text info: currentPos];
         if(b) { currentPos += text.length; }
         [self updateDisplay];
     } else {
@@ -100,6 +100,12 @@
 - (IBAction)reset:(id)sender {
     [coq reset];
     currentPos = 0;
+    [self updateDisplay];
+}
+
+- (IBAction)undo:(id)sender {
+    int pos = [coq undo];
+    currentPos = pos;
     [self updateDisplay];
 }
 @end
