@@ -45,9 +45,14 @@ let eval s =
       print_endline msg;
       false
 
+let reset () =
+  Stack.clear cmd_stack;
+  Coq.reset_initial ()
+
 
 let start () =
   ignore @@ Coq.init ();
   Callback.register "is_proof_mode" is_proof_mode;
-  Callback.register "get_goal" get_goal;
-  Callback.register "eval" eval
+  Callback.register "get_goal"      get_goal;
+  Callback.register "eval"          eval;
+  Callback.register "reset"         reset

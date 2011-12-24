@@ -18,4 +18,5 @@
     IBOutlet UILabel *currentLineLabel;
 }
 - (IBAction)eval:(id)sender;
+- (IBAction)reset:(id)sender;
 @end

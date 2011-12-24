@@ -71,4 +71,8 @@ int bas_write(int fd, char *buf, int len) {
     const char* chr = String_val(s);
     return [NSString stringWithUTF8String: chr];
 }
+
+-(void)reset {
+    caml_callback(*caml_named_value("reset"), Val_unit);
+}
 @end

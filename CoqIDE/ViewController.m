@@ -74,6 +74,16 @@
     }
 }
 
+- (void)updateDisplay {
+    [currentLineLabel setText:[NSString stringWithFormat:@"%d", currentPos]];
+    [message setText:[coq message]];
+    if([coq isProofMode]) {
+        [proof_tree setText:[coq goal]];
+    } else {
+        [proof_tree setText:@""];
+    }
+}
+
 - (IBAction)eval:(id)sender 
 {
     NSString* text = [self nextCommand];
@@ -81,13 +91,15 @@
         NSLog(@"next command: %@", text);
         BOOL b = [coq eval: text];
         if(b) { currentPos += text.length; }
-        [currentLineLabel setText:[NSString stringWithFormat:@"%d", currentPos]];
-        [message setText:[coq message]];
-        if([coq isProofMode]){
-            [proof_tree setText:[coq goal]];
-        }
+        [self updateDisplay];
     } else {
         [message setText:@"No more command"];
     }
+}
+
+- (IBAction)reset:(id)sender {
+    [coq reset];
+    currentPos = 0;
+    [self updateDisplay];
 }
 @end

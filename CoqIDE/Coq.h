@@ -14,5 +14,6 @@
 -(NSString*)message;
 -(BOOL)isProofMode;
 -(NSString*)goal;
+-(void)reset;
 @end
 
