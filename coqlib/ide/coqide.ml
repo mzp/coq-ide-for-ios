@@ -34,9 +34,17 @@ let get_goal () =
             "Proof completed."
 
 let eval s =
-  let reset_info =
-    Coq.interp true s in
-    Coq.push_phrase cmd_stack reset_info ()
+  try
+    let reset_info =
+      Coq.interp true s in
+      Coq.push_phrase cmd_stack reset_info ();
+      true
+  with e ->
+    let (msg,_) =
+      Coq.process_exn e in
+      print_endline msg;
+      false
+
 
 let start () =
   ignore @@ Coq.init ();

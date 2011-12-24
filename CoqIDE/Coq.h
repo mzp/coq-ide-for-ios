@@ -10,7 +10,7 @@
 
 @interface Coq : NSObject
 -(id)init;
--(void)eval: (NSString*)code;
+-(BOOL)eval: (NSString*)code;
 -(NSString*)message;
 -(BOOL)isProofMode;
 -(NSString*)goal;

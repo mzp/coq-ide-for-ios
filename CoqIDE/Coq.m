@@ -50,10 +50,11 @@ int bas_write(int fd, char *buf, int len) {
     return self;
 }
 
--(void)eval: (NSString*)code {
+-(BOOL)eval: (NSString*)code {
     const char* s = [code UTF8String];
     [buffer setString: @""];
-    caml_callback(*caml_named_value("eval"),caml_copy_string(s));
+    value ret = caml_callback(*caml_named_value("eval"),caml_copy_string(s));
+    return Bool_val(ret);
 }
 
 -(NSString*)message {

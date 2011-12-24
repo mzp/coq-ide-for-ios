@@ -70,7 +70,6 @@
     if(range.location == NSNotFound){
         return nil;
     } else {
-        currentPos += range.location + range.length;
         return [rest substringWithRange: NSMakeRange(0,range.location+range.length)];
     }
 }
@@ -80,7 +79,8 @@
     NSString* text = [self nextCommand];
     if(text != nil) {
         NSLog(@"next command: %@", text);
-        [coq eval: text];
+        BOOL b = [coq eval: text];
+        if(b) { currentPos += text.length; }
         [currentLineLabel setText:[NSString stringWithFormat:@"%d", currentPos]];
         [message setText:[coq message]];
         if([coq isProofMode]){
