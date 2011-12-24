@@ -67,19 +67,27 @@
     NSString* all = [code text];
     NSString* rest = [all substringWithRange: NSMakeRange(currentPos, [all length] - currentPos)];
     NSRange range = [rest rangeOfString:@"."];
-    currentPos += range.location + range.length;
-    return [rest substringWithRange: NSMakeRange(0,range.location+range.length)];
+    if(range.location == NSNotFound){
+        return nil;
+    } else {
+        currentPos += range.location + range.length;
+        return [rest substringWithRange: NSMakeRange(0,range.location+range.length)];
+    }
 }
 
 - (IBAction)eval:(id)sender 
 {
     NSString* text = [self nextCommand];
-    NSLog(@"next command: %@", text);
-    [coq eval: text];
-    [currentLineLabel setText:[NSString stringWithFormat:@"%d", currentPos]];
-    [message setText:[coq message]];
-    if([coq isProofMode]){
-        [proof_tree setText:[coq goal]];
+    if(text != nil) {
+        NSLog(@"next command: %@", text);
+        [coq eval: text];
+        [currentLineLabel setText:[NSString stringWithFormat:@"%d", currentPos]];
+        [message setText:[coq message]];
+        if([coq isProofMode]){
+            [proof_tree setText:[coq goal]];
+        }
+    } else {
+        [message setText:@"No more command"];
     }
 }
 @end
