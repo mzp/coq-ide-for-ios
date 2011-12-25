@@ -96,8 +96,8 @@
     [currentLineLabel setText:[NSString stringWithFormat:@"%d", currentPos]];
 
     NSMutableAttributedString *string = [code.attributedString mutableCopy];
-    [string addAttribute:(NSString*)kCTForegroundColorAttributeName value:[UIColor brownColor] range:NSMakeRange(0,currentPos)];
-    [string addAttribute:(NSString*)kCTForegroundColorAttributeName value:[UIColor brownColor] range:NSMakeRange(0,currentPos)];
+    [string addAttribute:(NSString*)kCTForegroundColorAttributeName value:(id)[UIColor redColor].CGColor range:NSMakeRange(0,currentPos)];
+
     [string removeAttribute:(NSString*)kCTForegroundColorAttributeName range:NSMakeRange(currentPos, [string length] - currentPos)];
     code.attributedString = string;
     code.editLock = currentPos;
