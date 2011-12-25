@@ -120,6 +120,9 @@ extern NSString * const EGOTextAttachmentPlaceholderString;
 @property(nonatomic) NSRange selectedRange;
 @property(nonatomic) NSRange markedRange;
 
+// dirty hack! User cannot edit text before editLock.
+@property(nonatomic) NSInteger editLock;
+
 - (BOOL)hasText;
 
 @end

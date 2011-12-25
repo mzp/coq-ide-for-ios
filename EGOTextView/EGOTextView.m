@@ -212,6 +212,8 @@ static CGFloat AttachmentRunDelegateGetWidth(void *refCon) {
 @synthesize returnKeyType;
 @synthesize enablesReturnKeyAutomatically;
 
+@synthesize editLock;
+
 
 - (void)commonInit {
     [self setText:@""];
@@ -698,7 +700,7 @@ static CGFloat AttachmentRunDelegateGetWidth(void *refCon) {
         }
     }
 
-    return returnRange.location;
+    return MAX(returnRange.location, self.editLock);
 }
 
 - (NSInteger)closestIndexToPoint:(CGPoint)point {	
