@@ -19,10 +19,11 @@
     __weak IBOutlet UITextView *proof_tree;
     __weak IBOutlet UISegmentedControl *buttonSegment;
 }
-- (IBAction)eval:(id)sender;
+- (IBAction)next:(id)sender;
 - (IBAction)reset:(id)sender;
-- (IBAction)undo:(id)sender;
+- (IBAction)back:(id)sender;
 - (IBAction)create:(id)sender;
+- (IBAction)pushButton:(id)sender;
 
 @property (strong, nonatomic) UIStoryboardPopoverSegue* popSegue;
 @end

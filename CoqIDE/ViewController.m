@@ -109,7 +109,7 @@
     }
 }
 
-- (IBAction)eval:(id)sender
+- (IBAction)next:(id)sender
 {
     NSString* text = [self nextCommand];
     if(text != nil) {
@@ -130,7 +130,7 @@
     [self updateDisplay];
 }
 
-- (IBAction)undo:(id)sender {
+- (IBAction)back:(id)sender {
     int pos = [coq undo];
     currentPos = pos;
     [self updateDisplay];
@@ -141,9 +141,25 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyyMMdd_HHmmss.'v'"];
     [filenameItem setTitle:[formatter stringFromDate:now]];
-
     [code setText:@"(* demo file *)\nCheck 42."];
     [self reset:sender];
+}
+
+- (IBAction)pushButton:(id)sender {
+    switch([buttonSegment selectedSegmentIndex]){
+        case 0:
+            [self reset: sender];
+            break;
+        case 1:
+            [self back: sender];
+            break;
+        case 2:
+            [self next: sender];
+            break;
+        case 3:
+            [self create: sender];
+            break;
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
