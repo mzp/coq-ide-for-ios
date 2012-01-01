@@ -22,6 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     buttonSegment.selectedSegmentIndex = UISegmentedControlNoSegment;
 	// Do any additional setup after loading the view, typically from a nib.
     coq = [[Coq alloc] init];
