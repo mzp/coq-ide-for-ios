@@ -13,11 +13,10 @@
 {
     Coq* coq;
     int currentPos;
-    __weak IBOutlet UILabel *filenameLabel;
+    __weak IBOutlet UINavigationItem *filenameItem;
     __weak IBOutlet UITextView *message;
     __weak IBOutlet EGOTextView *code;
     __weak IBOutlet UITextView *proof_tree;
-    __weak IBOutlet UILabel *currentLineLabel;
 }
 - (IBAction)eval:(id)sender;
 - (IBAction)reset:(id)sender;

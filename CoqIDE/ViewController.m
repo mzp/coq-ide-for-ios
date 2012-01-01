@@ -9,7 +9,6 @@
 #import "ViewController.h"
 
 @implementation ViewController
-
 @synthesize popSegue;
 
 - (void)didReceiveMemoryWarning
@@ -37,7 +36,7 @@
 
 - (void)handleTextChange:(id)sender{
     NSString* document = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
-    NSString* path = [NSString stringWithFormat:@"%@/%@" , document, [filenameLabel text]];
+    NSString* path = [NSString stringWithFormat:@"%@/%@" , document, [filenameItem title]];
     NSLog(@"write to %@", path);
     NSData* data = [[code text] dataUsingEncoding:NSUTF8StringEncoding];
     [data writeToFile:path atomically:YES];
@@ -48,8 +47,7 @@
     code = nil;
     message = nil;
     proof_tree = nil;
-    currentLineLabel = nil;
-    filenameLabel = nil;
+    filenameItem = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -93,14 +91,12 @@
 }
 
 - (void)updateDisplay {
-    [currentLineLabel setText:[NSString stringWithFormat:@"%d", currentPos]];
-
     NSMutableAttributedString *string = [code.attributedString mutableCopy];
     [string addAttribute:(NSString*)kCTForegroundColorAttributeName value:(id)[UIColor redColor].CGColor range:NSMakeRange(0,currentPos)];
 
     [string removeAttribute:(NSString*)kCTForegroundColorAttributeName range:NSMakeRange(currentPos, [string length] - currentPos)];
     code.attributedString = string;
-    code.editLock = currentPos;
+    code.editLock = currentPos + 1;
 
     [message setText:[coq message]];
     if([coq isProofMode]) {
@@ -141,7 +137,7 @@
     NSDate *now = [NSDate date];
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"yyyyMMdd_HHmmss.'v'"];
-    [filenameLabel setText: [formatter stringFromDate:now]];
+    [filenameItem setTitle:[formatter stringFromDate:now]];
 
     [code setText:@"(* demo file *)\nCheck 42."];
     [self reset:sender];
@@ -167,7 +163,7 @@
 	if([fileManager fileExistsAtPath:filePath]) {
         [self reset:self];
 
-        [filenameLabel setText: name];
+        [filenameItem setTitle:name];
 		NSData *data = [NSData dataWithContentsOfFile:filePath];
 		NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         [code setText:str];
