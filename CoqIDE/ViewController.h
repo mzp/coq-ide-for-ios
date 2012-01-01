@@ -17,6 +17,7 @@
     __weak IBOutlet UITextView *message;
     __weak IBOutlet EGOTextView *code;
     __weak IBOutlet UITextView *proof_tree;
+    __weak IBOutlet UISegmentedControl *buttonSegment;
 }
 - (IBAction)eval:(id)sender;
 - (IBAction)reset:(id)sender;

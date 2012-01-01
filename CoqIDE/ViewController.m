@@ -22,6 +22,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    buttonSegment.selectedSegmentIndex = UISegmentedControlNoSegment;
 	// Do any additional setup after loading the view, typically from a nib.
     coq = [[Coq alloc] init];
 
@@ -48,6 +49,7 @@
     message = nil;
     proof_tree = nil;
     filenameItem = nil;
+    buttonSegment = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
