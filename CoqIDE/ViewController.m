@@ -64,6 +64,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -79,7 +81,7 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     // Return YES for supported orientations
-    return YES;
+    return NO;
 }
 
 - (NSString*)nextCommand {
@@ -162,6 +164,8 @@
     }
 }
 
+
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     self.popSegue = (UIStoryboardPopoverSegue*)segue;
@@ -187,6 +191,33 @@
 		NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         [code setText:str];
     }
+}
+
+//キーボードが表示された場合
+- (void)keyboardWillShow:(NSNotification *)aNotification {
+    NSDictionary *info = [aNotification userInfo];
+    CGRect beginrect = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    CGRect endrect = [[info objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    CGRect cbeginrect = [[self.view superview] convertRect:beginrect toView:nil];
+    CGRect cendrect = [[self.view superview] convertRect:endrect toView:nil];
+    CGRect frame = [self.view frame];
+    if (cbeginrect.size.height == cendrect.size.height) {
+        frame.size.height -= cbeginrect.size.height;
+    }
+    else {
+        frame.size.height -= (cendrect.size.height - cbeginrect.size.height);
+    }
+    [self.view setFrame:frame];
+}
+
+//キーボードが非表示にされた場合（keyboardWillShowと同じことを高さを+してやっているだけ）
+- (void)keyboardWillHide:(NSNotification *)aNotification {
+    NSDictionary *info = [aNotification userInfo];
+    CGRect beginrect = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue];
+    CGRect cbeginrect = [[self.view superview] convertRect:beginrect toView:nil];
+    CGRect frame = [self.view frame];
+    frame.size.height += cbeginrect.size.height;
+    [self.view setFrame:frame];
 }
 
 @end
