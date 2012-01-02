@@ -87,11 +87,17 @@
 - (NSString*)nextCommand {
     NSString* all = [code text];
     NSString* rest = [all substringWithRange: NSMakeRange(currentPos, [all length] - currentPos)];
-    NSRange range = [rest rangeOfString:@"."];
-    if(range.location == NSNotFound){
+    NSRange r1 = [rest rangeOfString:@"."];
+    NSRange r2 = [rest rangeOfString:@"..."];
+
+    if(r1.location == NSNotFound && r2.location == NSNotFound){
         return nil;
     } else {
-        return [rest substringWithRange: NSMakeRange(0,range.location+range.length)];
+        if(r1.location < r2.location){
+            return [rest substringWithRange:NSMakeRange(0, r1.location + r1.length)];
+        }else{
+            return [rest substringWithRange:NSMakeRange(0, r2.location + r2.length)];
+        }
     }
 }
 
@@ -163,8 +169,6 @@
             break;
     }
 }
-
-
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
