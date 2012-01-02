@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Coq.h"
 #import "EGOTextView.h"
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextInputDelegate>
 {
     Coq* coq;
     int currentPos;

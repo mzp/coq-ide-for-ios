@@ -27,16 +27,14 @@
 	// Do any additional setup after loading the view, typically from a nib.
     coq = [[Coq alloc] init];
 
-    NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
-    [nc addObserver:self
-           selector:@selector(handleTextChange:)
-               name:UITextViewTextDidChangeNotification
-             object:nil];
-
+    code.inputDelegate = self;
     [self create:nil];
 }
 
-- (void)handleTextChange:(id)sender{
+- (void)selectionWillChange:(id <UITextInput>)textInput {}
+- (void)selectionDidChange:(id <UITextInput>)textInput {}
+- (void)textWillChange:(id <UITextInput>)textInput {}
+- (void)textDidChange:(id <UITextInput>)textInput {
     NSString* document = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"];
     NSString* path = [NSString stringWithFormat:@"%@/%@" , document, [filenameItem title]];
     NSLog(@"write to %@", path);
