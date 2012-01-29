@@ -7,8 +7,6 @@
 //
 
 #import "BrowseViewController.h"
-#import "DefinitionViewController.h"
-#import "ProofViewController.h"
 
 @implementation BrowseViewController
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -47,7 +45,7 @@
 - (void)viewDidUnload
 {
     code = nil;
-    log = nil;
+    result = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -59,76 +57,29 @@
 	return YES;
 }
 
-- (void)log:(NSString*) text
-{
-    [log setText: text];
+- (void)append:(NSString*) s {
+    [result setText: [s stringByAppendingFormat:@"\n%@", [result text]]];
 }
 
-- (id)getViewController: (NSString*)name
-{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:
-                                @"MainStoryboard" bundle:[NSBundle mainBundle]];
-    return [storyboard instantiateViewControllerWithIdentifier:name];
-}
-
-- (void)appendCode: (NSString*)text 
-{
-    [code setText: [[code text] stringByAppendingFormat:@"\n%@", text]];
-}
-
-- (void)eval:(NSString*) text
-{
-    if([coq eval: text info:0]) 
-    {
-        if([coq isProofMode]) 
-        {
-            ProofViewController* view = [self getViewController:@"proof"];
-            view.modalPresentationStyle = UIModalPresentationPageSheet;
-            view.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-            view.delegate = self;
-            view.theorem  = text;
-            view.coq      = coq;
-            [self presentModalViewController:view animated:YES];
+- (IBAction)eval:(id)sender {
+    NSString* text = [NSString stringWithFormat: @"> %@\n", [code text]];
+    
+    if([coq eval: [code text] info:0]) {
+        if(![[coq message] isEqualToString: @""]) {
+            text = [text stringByAppendingFormat:@"%@\n", [coq message]];
         }
-        else
-        {
-            [self appendCode: text];
+        if([coq isProofMode]) {
+            text = [text stringByAppendingFormat:@"%@\n", [coq goal]];
         }
+        [self append:text];
+        [code setText:@""];
+    } else {
+        [self append: @"syntax error"];
     }
-    [self log: [coq message]];
+
+//    [coq eval: [code text]];
+    
+
 }
 
-- (void)onClose
-{
-    if(definition != nil){
-        [self eval: definition];
-        definition = nil;
-    }
-}
-
-- (void)onProofClose
-{
-    if(proof != nil){
-        [self appendCode: proof];
-        proof = nil;
-    }
-}
-
-- (void)setDefiniton:(NSString*) text {
-    definition = text;
-}
-
-- (void)setProof:(NSString *)text
-{
-    proof = text;
-}
-
-- (IBAction)add:(id)sender 
-{
-    DefinitionViewController* view = [self getViewController:@"definition"];
-    view.modalPresentationStyle = UIModalPresentationFormSheet;
-    view.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    view.delegate = self;
-    [self presentModalViewController:view animated:YES];
-}
 @end

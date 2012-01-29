@@ -1,1 +1,0 @@
-theories/QArith/QArith_base.vo theories/QArith/QArith_base.glob: theories/QArith/QArith_base.v theories/ZArith/ZArith.vo plugins/setoid_ring/ZArithRing.vo theories/Classes/Morphisms.vo theories/Setoids/Setoid.vo theories/Bool/Bool.vo

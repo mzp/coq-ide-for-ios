@@ -1,1 +1,0 @@
-theories/FSets/FSetWeakList.vo theories/FSets/FSetWeakList.glob: theories/FSets/FSetWeakList.v theories/FSets/FSetInterface.vo theories/Structures/Equalities.vo theories/FSets/FSetCompat.vo theories/MSets/MSetWeakList.vo

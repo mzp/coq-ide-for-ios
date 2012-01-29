@@ -1,1 +1,0 @@
-theories/Numbers/Integer/Abstract/ZDivTrunc.vo theories/Numbers/Integer/Abstract/ZDivTrunc.glob: theories/Numbers/Integer/Abstract/ZDivTrunc.v theories/Numbers/Integer/Abstract/ZAxioms.vo theories/Numbers/Integer/Abstract/ZProperties.vo theories/Numbers/NatInt/NZDiv.vo

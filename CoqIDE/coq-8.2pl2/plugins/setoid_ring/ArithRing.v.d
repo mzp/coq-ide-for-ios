@@ -1,1 +1,0 @@
-plugins/setoid_ring/ArithRing.vo plugins/setoid_ring/ArithRing.glob: plugins/setoid_ring/ArithRing.v theories/Arith/Mult.vo theories/NArith/BinNat.vo theories/NArith/Nnat.vo plugins/setoid_ring/Ring.vo

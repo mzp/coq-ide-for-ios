@@ -1,1 +1,0 @@
-theories/Classes/SetoidClass.vo theories/Classes/SetoidClass.glob: theories/Classes/SetoidClass.v theories/Program/Program.vo theories/Relations/Relation_Definitions.vo theories/Classes/RelationClasses.vo theories/Classes/Morphisms.vo

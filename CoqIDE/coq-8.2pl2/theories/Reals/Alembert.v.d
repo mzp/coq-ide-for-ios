@@ -1,1 +1,0 @@
-theories/Reals/Alembert.vo theories/Reals/Alembert.glob: theories/Reals/Alembert.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/Rseries.vo theories/Reals/SeqProp.vo theories/Reals/PartSum.vo theories/Arith/Max.vo

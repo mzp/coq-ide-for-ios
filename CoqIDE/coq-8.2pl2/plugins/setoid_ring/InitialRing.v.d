@@ -1,1 +1,0 @@
-plugins/setoid_ring/InitialRing.vo plugins/setoid_ring/InitialRing.glob: plugins/setoid_ring/InitialRing.v theories/ZArith/ZArith_base.vo theories/ZArith/Zpow_def.vo theories/ZArith/BinInt.vo theories/NArith/BinNat.vo theories/Setoids/Setoid.vo plugins/setoid_ring/Ring_theory.vo plugins/setoid_ring/Ring_polynom.vo theories/ZArith/ZOdiv_def.vo

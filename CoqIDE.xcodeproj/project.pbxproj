@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		130985B414D5001700B2968A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 130985B314D5001700B2968A /* icon.png */; };
 		130B297B1499635C00D1FF7C /* Coq.m in Sources */ = {isa = PBXBuildFile; fileRef = 130B297A1499635C00D1FF7C /* Coq.m */; };
 		13334D081496BC7400847078 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 13334D071496BC7400847078 /* Icon.png */; };
 		13334D0B1496BCEA00847078 /* coq-8.2pl2 in Resources */ = {isa = PBXBuildFile; fileRef = 13334D0A1496BCEA00847078 /* coq-8.2pl2 */; };
@@ -34,8 +35,6 @@
 		13939BD614923EC8005C07F2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 13939BD414923EC8005C07F2 /* InfoPlist.strings */; };
 		13939BD914923EC8005C07F2 /* CoqIDETests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13939BD814923EC8005C07F2 /* CoqIDETests.m */; };
 		139AB31314C263E600287FB5 /* BrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139AB31214C263E500287FB5 /* BrowseViewController.m */; };
-		139AB31614C2647200287FB5 /* ProofViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139AB31514C2647200287FB5 /* ProofViewController.m */; };
-		139AB31914C2648200287FB5 /* DefinitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 139AB31814C2648200287FB5 /* DefinitionViewController.m */; };
 		13BB329E149244E700DE58A7 /* bigarray_stubs.c in Sources */ = {isa = PBXBuildFile; fileRef = 13BB2FB6149244E600DE58A7 /* bigarray_stubs.c */; };
 		13BB32A1149244E700DE58A7 /* mmap_unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 13BB2FB9149244E600DE58A7 /* mmap_unix.c */; };
 		13BB32A7149244E700DE58A7 /* cldbm.c in Sources */ = {isa = PBXBuildFile; fileRef = 13BB2FC1149244E600DE58A7 /* cldbm.c */; };
@@ -203,6 +202,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		130985B314D5001700B2968A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		130B29791499635C00D1FF7C /* Coq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Coq.h; sourceTree = "<group>"; };
 		130B297A1499635C00D1FF7C /* Coq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coq.m; sourceTree = "<group>"; };
 		130B297D149964B700D1FF7C /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
@@ -248,10 +248,6 @@
 		13939BD714923EC8005C07F2 /* CoqIDETests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoqIDETests.h; sourceTree = "<group>"; };
 		13939BD814923EC8005C07F2 /* CoqIDETests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoqIDETests.m; sourceTree = "<group>"; };
 		139AB31214C263E500287FB5 /* BrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowseViewController.m; sourceTree = "<group>"; };
-		139AB31414C2647200287FB5 /* ProofViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProofViewController.h; sourceTree = "<group>"; };
-		139AB31514C2647200287FB5 /* ProofViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProofViewController.m; sourceTree = "<group>"; };
-		139AB31714C2648200287FB5 /* DefinitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefinitionViewController.h; sourceTree = "<group>"; };
-		139AB31814C2648200287FB5 /* DefinitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefinitionViewController.m; sourceTree = "<group>"; };
 		13BB2F461492428400DE58A7 /* m-nt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "m-nt.h"; sourceTree = "<group>"; };
 		13BB2F471492428400DE58A7 /* m-templ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "m-templ.h"; sourceTree = "<group>"; };
 		13BB2F481492428400DE58A7 /* m.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = m.h; sourceTree = "<group>"; };
@@ -518,6 +514,7 @@
 		13939B9E14923EC7005C07F2 = {
 			isa = PBXGroup;
 			children = (
+				130985B314D5001700B2968A /* icon.png */,
 				130D1A9714A6338D00CB9198 /* QuartzCore.framework */,
 				130D1A9114A6334600CB9198 /* CoreText.framework */,
 				13939BB314923EC7005C07F2 /* CoqIDE */,
@@ -556,15 +553,11 @@
 				130B297D149964B700D1FF7C /* util.h */,
 				13939BBD14923EC7005C07F2 /* AppDelegate.m */,
 				13939BBF14923EC7005C07F2 /* MainStoryboard.storyboard */,
-				139AB31714C2648200287FB5 /* DefinitionViewController.h */,
-				139AB31814C2648200287FB5 /* DefinitionViewController.m */,
 				13939BB414923EC7005C07F2 /* Supporting Files */,
 				130B29791499635C00D1FF7C /* Coq.h */,
 				130B297A1499635C00D1FF7C /* Coq.m */,
 				13BCA65D14C2635F00920E2B /* BrowseViewController.h */,
 				139AB31214C263E500287FB5 /* BrowseViewController.m */,
-				139AB31414C2647200287FB5 /* ProofViewController.h */,
-				139AB31514C2647200287FB5 /* ProofViewController.m */,
 			);
 			path = CoqIDE;
 			sourceTree = "<group>";
@@ -994,6 +987,7 @@
 				136050D614B06B8E00D3D0A4 /* rewindtostart.png in Resources */,
 				136050D914B06C5400D3D0A4 /* page.png in Resources */,
 				136050DA14B06C5400D3D0A4 /* plus.png in Resources */,
+				130985B414D5001700B2968A /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1188,8 +1182,6 @@
 				1379FC9D1496368D00E7D539 /* coq_values.c in Sources */,
 				130B297B1499635C00D1FF7C /* Coq.m in Sources */,
 				139AB31314C263E600287FB5 /* BrowseViewController.m in Sources */,
-				139AB31614C2647200287FB5 /* ProofViewController.m in Sources */,
-				139AB31914C2648200287FB5 /* DefinitionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1262,7 +1254,7 @@
 				HEADER_SEARCH_PATHS = CoqIDE;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1284,7 +1276,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1300,7 +1292,7 @@
 					"\"$(SRCROOT)/CoqIDE/byterun\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1316,7 +1308,7 @@
 					"\"$(SRCROOT)/CoqIDE/byterun\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

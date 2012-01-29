@@ -1,1 +1,0 @@
-theories/Strings/Ascii.vo theories/Strings/Ascii.glob: theories/Strings/Ascii.v theories/Bool/Bool.vo theories/NArith/BinPos.vo theories/NArith/BinNat.vo theories/NArith/Nnat.vo plugins/syntax/ascii_syntax_plugin.cma

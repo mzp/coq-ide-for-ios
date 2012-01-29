@@ -1,1 +1,0 @@
-theories/Numbers/NatInt/NZAxioms.vo theories/Numbers/NatInt/NZAxioms.glob: theories/Numbers/NatInt/NZAxioms.v theories/Structures/Equalities.vo theories/Structures/Orders.vo theories/Numbers/NumPrelude.vo theories/Structures/GenericMinMax.vo

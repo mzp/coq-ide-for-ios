@@ -1,1 +1,0 @@
-theories/Classes/EquivDec.vo theories/Classes/EquivDec.glob: theories/Classes/EquivDec.v theories/Classes/Equivalence.vo theories/Logic/Decidable.vo theories/Bool/Bool.vo theories/Arith/Peano_dec.vo theories/Program/Program.vo theories/Lists/List.vo

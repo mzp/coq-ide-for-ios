@@ -1,1 +1,0 @@
-theories/Structures/OrdersEx.vo theories/Structures/OrdersEx.glob: theories/Structures/OrdersEx.v theories/Structures/Orders.vo theories/Arith/NatOrderedType.vo theories/NArith/POrderedType.vo theories/NArith/NOrderedType.vo theories/ZArith/ZOrderedType.vo theories/Classes/RelationPairs.vo theories/Structures/EqualitiesFacts.vo

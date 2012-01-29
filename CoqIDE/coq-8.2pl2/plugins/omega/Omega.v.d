@@ -1,1 +1,0 @@
-plugins/omega/Omega.vo plugins/omega/Omega.glob: plugins/omega/Omega.v theories/ZArith/ZArith_base.vo plugins/omega/OmegaLemmas.vo plugins/omega/PreOmega.vo plugins/omega/omega_plugin.cma theories/ZArith/Zhints.vo

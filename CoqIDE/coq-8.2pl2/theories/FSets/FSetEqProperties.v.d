@@ -1,1 +1,0 @@
-theories/FSets/FSetEqProperties.vo theories/FSets/FSetEqProperties.glob: theories/FSets/FSetEqProperties.v theories/FSets/FSetProperties.vo theories/Bool/Zerob.vo theories/Bool/Sumbool.vo plugins/omega/Omega.vo theories/Structures/DecidableTypeEx.vo

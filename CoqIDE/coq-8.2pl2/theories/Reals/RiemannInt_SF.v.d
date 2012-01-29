@@ -1,1 +1,0 @@
-theories/Reals/RiemannInt_SF.vo theories/Reals/RiemannInt_SF.glob: theories/Reals/RiemannInt_SF.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/Ranalysis.vo theories/Logic/Classical_Prop.vo

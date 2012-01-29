@@ -13,187 +13,42 @@
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="Lvu-Fz-Kl9">
-                                <rect key="frame" x="0.0" y="44" width="768" height="746"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <navigationBar contentMode="scaleToFill" id="9er-18-JLo">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="9Bh-71-Bna">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="31"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="theorems.v" id="ed1-KS-Uh5">
-                                        <barButtonItem key="rightBarButtonItem" title="+" id="U5s-2H-1Xs">
-                                            <connections>
-                                                <action selector="add:" destination="2" id="mM1-EP-U6J"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" id="KlK-VM-5XL">
-                                <rect key="frame" x="0.0" y="789" width="768" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="alphabet" returnKeyType="go"/>
+                                <connections>
+                                    <action selector="eval:" destination="2" eventType="editingDidEndOnExit" id="4Lo-tq-bBl"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="black" editable="NO" id="r88-Li-QLh">
+                                <rect key="frame" x="0.0" y="31" width="768" height="973"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="code" destination="Lvu-Fz-Kl9" id="pjh-O3-5PJ"/>
-                        <outlet property="log" destination="KlK-VM-5XL" id="6zo-iw-Mad"/>
+                        <outlet property="code" destination="9Bh-71-Bna" id="Xe7-e3-X2k"/>
+                        <outlet property="result" destination="r88-Li-QLh" id="qez-0g-VPW"/>
                     </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-277" y="-508"/>
-        </scene>
-        <scene sceneID="Np1-qr-TyD">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="88i-VO-IdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="proof" id="saE-km-OKw" customClass="ProofViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="edb-Kc-jMZ">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="intros." id="jDw-fK-oWz">
-                                <rect key="frame" x="20" y="66" width="728" height="267"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no"/>
-                            </textView>
-                            <navigationBar contentMode="scaleToFill" id="0Tn-vy-c9t">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="Title" id="J5U-8U-eWD">
-                                        <barButtonItem key="leftBarButtonItem" title="Back" id="IgJ-23-XhF"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wHE-uL-KPj">
-                                <rect key="frame" x="676" y="347" width="72" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Go">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="command:" destination="saE-km-OKw" eventType="touchUpInside" id="7kW-E8-hvN"/>
-                                </connections>
-                            </button>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="s09-Ad-nCl">
-                                <rect key="frame" x="0.0" y="960" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem title="Restart" id="QBF-To-tVr"/>
-                                    <barButtonItem title="Undo" id="rZL-gu-809"/>
-                                </items>
-                            </toolbar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="Proof Tree" id="p22-wY-VZ0">
-                                <rect key="frame" x="20" y="446" width="728" height="501"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="xfg-MP-Wap">
-                                <rect key="frame" x="271" y="395" width="227" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Tree"/>
-                                    <segment title="Script"/>
-                                    <segment title="Search"/>
-                                </segments>
-                            </segmentedControl>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="command" destination="jDw-fK-oWz" id="mul-2X-iNR"/>
-                        <outlet property="goal" destination="p22-wY-VZ0" id="fZ2-7H-GsT"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="600" y="614"/>
-        </scene>
-        <scene sceneID="LzS-8I-bj8">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LMA-oN-vzK" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController storyboardIdentifier="definition" id="PGa-no-Bdf" customClass="DefinitionViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vmq-Yd-eU2">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="Goal forall A, A -> A." id="JIX-cK-2qQ">
-                                <rect key="frame" x="0.0" y="44" width="768" height="960"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <navigationBar contentMode="scaleToFill" id="ABT-g1-Kkh">
-                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <items>
-                                    <navigationItem title="New Definition/Theorem" id="jzS-4R-eSO">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="znD-Pc-G2i">
-                                            <connections>
-                                                <action selector="close:" destination="PGa-no-Bdf" id="Riy-Ph-eps"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" title="OK" id="hEh-5E-sd1">
-                                            <connections>
-                                                <action selector="ok:" destination="PGa-no-Bdf" id="7OX-7X-wuL"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                    <connections>
-                        <outlet property="definition" destination="JIX-cK-2qQ" id="3bf-cg-Oh7"/>
-                    </connections>
-                </viewController>
-            </objects>
-            <point key="canvasLocation" x="600" y="-508"/>
         </scene>
     </scenes>
     <classes>
         <class className="BrowseViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BrowseViewController.h"/>
             <relationships>
-                <relationship kind="action" name="add:"/>
-                <relationship kind="outlet" name="code" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="log" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="DefinitionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DefinitionViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="close:"/>
-                <relationship kind="action" name="ok:"/>
-                <relationship kind="outlet" name="definition" candidateClass="UITextView"/>
-            </relationships>
-        </class>
-        <class className="ProofViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ProofViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="command:"/>
-                <relationship kind="outlet" name="command" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="goal" candidateClass="UITextView"/>
+                <relationship kind="action" name="eval:"/>
+                <relationship kind="outlet" name="code" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="result" candidateClass="UITextView"/>
             </relationships>
         </class>
     </classes>

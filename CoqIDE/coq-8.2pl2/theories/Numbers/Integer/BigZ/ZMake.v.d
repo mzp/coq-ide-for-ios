@@ -1,1 +1,0 @@
-theories/Numbers/Integer/BigZ/ZMake.vo theories/Numbers/Integer/BigZ/ZMake.glob: theories/Numbers/Integer/BigZ/ZMake.v theories/ZArith/ZArith.vo theories/Numbers/BigNumPrelude.vo theories/Numbers/Natural/SpecViaZ/NSig.vo theories/Numbers/Integer/SpecViaZ/ZSig.vo

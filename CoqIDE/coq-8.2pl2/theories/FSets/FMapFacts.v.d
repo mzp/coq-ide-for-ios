@@ -1,1 +1,0 @@
-theories/FSets/FMapFacts.vo theories/FSets/FMapFacts.glob: theories/FSets/FMapFacts.v theories/Bool/Bool.vo theories/Structures/DecidableType.vo theories/Structures/DecidableTypeEx.vo theories/Structures/OrderedType.vo theories/Classes/Morphisms.vo theories/FSets/FMapInterface.vo

@@ -1,1 +1,0 @@
-theories/Numbers/Integer/Binary/ZBinary.vo theories/Numbers/Integer/Binary/ZBinary.glob: theories/Numbers/Integer/Binary/ZBinary.v theories/Numbers/Integer/Abstract/ZAxioms.vo theories/Numbers/Integer/Abstract/ZProperties.vo theories/ZArith/ZArith_base.vo

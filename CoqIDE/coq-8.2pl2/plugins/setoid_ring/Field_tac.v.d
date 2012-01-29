@@ -1,1 +1,0 @@
-plugins/setoid_ring/Field_tac.vo plugins/setoid_ring/Field_tac.glob: plugins/setoid_ring/Field_tac.v plugins/setoid_ring/Ring_tac.vo plugins/setoid_ring/BinList.vo plugins/setoid_ring/Ring_polynom.vo plugins/setoid_ring/InitialRing.vo plugins/setoid_ring/Field_theory.vo

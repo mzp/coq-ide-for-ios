@@ -1,1 +1,0 @@
-theories/Reals/PartSum.vo theories/Reals/PartSum.glob: theories/Reals/PartSum.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/Rseries.vo theories/Reals/Rcomplete.vo theories/Arith/Max.vo

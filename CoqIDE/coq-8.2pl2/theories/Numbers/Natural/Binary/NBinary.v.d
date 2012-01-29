@@ -1,1 +1,0 @@
-theories/Numbers/Natural/Binary/NBinary.vo theories/Numbers/Natural/Binary/NBinary.glob: theories/Numbers/Natural/Binary/NBinary.v theories/NArith/BinPos.vo theories/NArith/BinNat.vo theories/Numbers/Natural/Abstract/NAxioms.vo theories/Numbers/Natural/Abstract/NProperties.vo

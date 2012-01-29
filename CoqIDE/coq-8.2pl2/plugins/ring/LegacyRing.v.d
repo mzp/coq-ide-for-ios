@@ -1,1 +1,0 @@
-plugins/ring/LegacyRing.vo plugins/ring/LegacyRing.glob: plugins/ring/LegacyRing.v theories/Bool/Bool.vo plugins/ring/LegacyRing_theory.vo plugins/quote/Quote.vo plugins/ring/Ring_normalize.vo plugins/ring/Ring_abstract.vo plugins/ring/ring_plugin.cma

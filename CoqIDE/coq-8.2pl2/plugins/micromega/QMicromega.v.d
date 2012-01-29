@@ -1,1 +1,0 @@
-plugins/micromega/QMicromega.vo plugins/micromega/QMicromega.glob: plugins/micromega/QMicromega.v plugins/micromega/OrderedRing.vo plugins/micromega/RingMicromega.vo plugins/micromega/Refl.vo theories/QArith/QArith.vo theories/QArith/Qfield.vo plugins/micromega/EnvRing.vo theories/Lists/List.vo plugins/micromega/Tauto.vo

@@ -1,1 +1,0 @@
-theories/Sets/Powerset.vo theories/Sets/Powerset.glob: theories/Sets/Powerset.v theories/Sets/Ensembles.vo theories/Sets/Relations_1.vo theories/Sets/Relations_1_facts.vo theories/Sets/Partial_Order.vo theories/Sets/Cpo.vo

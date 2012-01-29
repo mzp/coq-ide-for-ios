@@ -1,1 +1,0 @@
-theories/Reals/Rminmax.vo theories/Reals/Rminmax.glob: theories/Reals/Rminmax.v theories/Structures/Orders.vo theories/Reals/Rbase.vo theories/Reals/Rbasic_fun.vo theories/Reals/ROrderedType.vo theories/Structures/GenericMinMax.vo

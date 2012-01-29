@@ -1,1 +1,0 @@
-theories/FSets/FSetList.vo theories/FSets/FSetList.glob: theories/FSets/FSetList.v theories/FSets/FSetInterface.vo theories/FSets/FSetCompat.vo theories/MSets/MSetList.vo theories/Structures/Orders.vo theories/Structures/OrdersAlt.vo

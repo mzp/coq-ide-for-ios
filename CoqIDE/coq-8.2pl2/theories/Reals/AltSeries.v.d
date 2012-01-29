@@ -1,1 +1,0 @@
-theories/Reals/AltSeries.vo theories/Reals/AltSeries.glob: theories/Reals/AltSeries.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/Rseries.vo theories/Reals/SeqProp.vo theories/Reals/PartSum.vo theories/Arith/Max.vo

@@ -1,1 +1,0 @@
-theories/Sets/Finite_sets_facts.vo theories/Sets/Finite_sets_facts.glob: theories/Sets/Finite_sets_facts.v theories/Sets/Finite_sets.vo theories/Sets/Constructive_sets.vo theories/Logic/Classical_Type.vo theories/Sets/Classical_sets.vo theories/Sets/Powerset.vo theories/Sets/Powerset_facts.vo theories/Sets/Powerset_Classical_facts.vo theories/Arith/Gt.vo theories/Arith/Lt.vo

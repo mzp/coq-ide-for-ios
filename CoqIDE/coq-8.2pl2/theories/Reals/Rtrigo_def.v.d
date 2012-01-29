@@ -1,1 +1,0 @@
-theories/Reals/Rtrigo_def.vo theories/Reals/Rtrigo_def.glob: theories/Reals/Rtrigo_def.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/SeqSeries.vo theories/Reals/Rtrigo_fun.vo theories/Arith/Max.vo

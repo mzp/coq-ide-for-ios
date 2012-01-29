@@ -1,1 +1,0 @@
-plugins/romega/ROmega.vo plugins/romega/ROmega.glob: plugins/romega/ROmega.v plugins/romega/ReflOmegaCore.vo theories/Setoids/Setoid.vo plugins/omega/PreOmega.vo theories/ZArith/ZArith_base.vo plugins/omega/OmegaPlugin.vo plugins/romega/romega_plugin.cma

@@ -1,1 +1,0 @@
-theories/ZArith/ZOrderedType.vo theories/ZArith/ZOrderedType.glob: theories/ZArith/ZOrderedType.v theories/ZArith/BinInt.vo theories/ZArith/Zcompare.vo theories/ZArith/Zorder.vo theories/ZArith/Zbool.vo theories/ZArith/ZArith_dec.vo theories/Structures/Equalities.vo theories/Structures/Orders.vo theories/Structures/OrdersTac.vo

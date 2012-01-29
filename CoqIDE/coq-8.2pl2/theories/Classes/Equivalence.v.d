@@ -1,1 +1,0 @@
-theories/Classes/Equivalence.vo theories/Classes/Equivalence.glob: theories/Classes/Equivalence.v theories/Program/Basics.vo theories/Program/Tactics.vo theories/Classes/Init.vo theories/Relations/Relation_Definitions.vo theories/Classes/RelationClasses.vo theories/Classes/Morphisms.vo

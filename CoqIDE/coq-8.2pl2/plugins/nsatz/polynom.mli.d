@@ -1,1 +1,0 @@
-plugins/nsatz/polynom.cmi:

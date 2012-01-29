@@ -1,1 +1,0 @@
-theories/Numbers/Cyclic/Abstract/NZCyclic.vo theories/Numbers/Cyclic/Abstract/NZCyclic.glob: theories/Numbers/Cyclic/Abstract/NZCyclic.v theories/Numbers/NatInt/NZAxioms.vo theories/Numbers/BigNumPrelude.vo theories/Numbers/Cyclic/DoubleCyclic/DoubleType.vo theories/Numbers/Cyclic/Abstract/CyclicAxioms.vo

@@ -1,1 +1,0 @@
-theories/Lists/SetoidList.vo theories/Lists/SetoidList.glob: theories/Lists/SetoidList.v theories/Lists/List.vo theories/Sorting/Sorting.vo theories/Setoids/Setoid.vo theories/Program/Basics.vo theories/Classes/Morphisms.vo

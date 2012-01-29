@@ -1,1 +1,0 @@
-plugins/fourier/Fourier.vo plugins/fourier/Fourier.glob: plugins/fourier/Fourier.v plugins/ring/LegacyRing.vo plugins/field/LegacyField.vo theories/Reals/DiscrR.vo plugins/fourier/Fourier_util.vo plugins/fourier/fourier_plugin.cma

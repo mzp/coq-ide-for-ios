@@ -1,1 +1,0 @@
-theories/Sorting/Mergesort.vo theories/Sorting/Mergesort.glob: theories/Sorting/Mergesort.v theories/Lists/List.vo theories/Setoids/Setoid.vo theories/Sorting/Permutation.vo theories/Sorting/Sorted.vo theories/Structures/Orders.vo

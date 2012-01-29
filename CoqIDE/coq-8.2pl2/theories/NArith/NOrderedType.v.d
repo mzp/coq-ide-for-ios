@@ -1,1 +1,0 @@
-theories/NArith/NOrderedType.vo theories/NArith/NOrderedType.glob: theories/NArith/NOrderedType.v theories/NArith/BinNat.vo theories/Structures/Equalities.vo theories/Structures/Orders.vo theories/Structures/OrdersTac.vo

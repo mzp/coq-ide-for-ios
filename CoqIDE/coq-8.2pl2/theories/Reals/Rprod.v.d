@@ -1,1 +1,0 @@
-theories/Reals/Rprod.vo theories/Reals/Rprod.glob: theories/Reals/Rprod.v theories/Arith/Compare.vo theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/Rseries.vo theories/Reals/PartSum.vo theories/Reals/Binomial.vo

@@ -1,1 +1,0 @@
-theories/Structures/Orders.vo theories/Structures/Orders.glob: theories/Structures/Orders.v theories/Relations/Relations.vo theories/Classes/Morphisms.vo theories/Setoids/Setoid.vo theories/Structures/Equalities.vo

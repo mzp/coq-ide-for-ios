@@ -1,1 +1,0 @@
-theories/Reals/ROrderedType.vo theories/Reals/ROrderedType.glob: theories/Reals/ROrderedType.v theories/Reals/Rbase.vo theories/Structures/Equalities.vo theories/Structures/Orders.vo theories/Structures/OrdersTac.vo

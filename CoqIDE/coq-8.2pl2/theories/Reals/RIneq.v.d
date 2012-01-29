@@ -1,1 +1,0 @@
-theories/Reals/RIneq.vo theories/Reals/RIneq.glob: theories/Reals/RIneq.v theories/Reals/Raxioms.vo theories/Reals/Rpow_def.vo theories/ZArith/Zpower.vo plugins/setoid_ring/ZArithRing.vo plugins/omega/Omega.vo plugins/setoid_ring/RealField.vo

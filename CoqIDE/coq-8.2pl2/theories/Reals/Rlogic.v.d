@@ -1,1 +1,0 @@
-theories/Reals/Rlogic.vo theories/Reals/Rlogic.glob: theories/Reals/Rlogic.v theories/Logic/ConstructiveEpsilon.vo theories/Reals/Rfunctions.vo theories/Reals/PartSum.vo theories/Reals/SeqSeries.vo theories/Reals/RiemannInt.vo plugins/fourier/Fourier.vo

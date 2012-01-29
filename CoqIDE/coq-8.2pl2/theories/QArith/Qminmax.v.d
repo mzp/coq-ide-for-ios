@@ -1,1 +1,0 @@
-theories/QArith/Qminmax.vo theories/QArith/Qminmax.glob: theories/QArith/Qminmax.v theories/QArith/QArith_base.vo theories/Structures/Orders.vo theories/QArith/QOrderedType.vo theories/Structures/GenericMinMax.vo

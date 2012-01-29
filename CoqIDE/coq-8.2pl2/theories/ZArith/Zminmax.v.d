@@ -1,1 +1,0 @@
-theories/ZArith/Zminmax.vo theories/ZArith/Zminmax.glob: theories/ZArith/Zminmax.v theories/Structures/Orders.vo theories/ZArith/BinInt.vo theories/ZArith/Zcompare.vo theories/ZArith/Zorder.vo theories/ZArith/ZOrderedType.vo theories/Structures/GenericMinMax.vo

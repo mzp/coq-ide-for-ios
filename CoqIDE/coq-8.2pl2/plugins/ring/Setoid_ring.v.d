@@ -1,1 +1,0 @@
-plugins/ring/Setoid_ring.vo plugins/ring/Setoid_ring.glob: plugins/ring/Setoid_ring.v plugins/ring/Setoid_ring_theory.vo plugins/quote/Quote.vo plugins/ring/Setoid_ring_normalize.vo plugins/ring/ring_plugin.cma

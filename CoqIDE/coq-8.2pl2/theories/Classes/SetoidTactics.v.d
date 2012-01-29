@@ -1,1 +1,0 @@
-theories/Classes/SetoidTactics.vo theories/Classes/SetoidTactics.glob: theories/Classes/SetoidTactics.v theories/Classes/Morphisms.vo theories/Classes/Morphisms_Prop.vo theories/Classes/RelationClasses.vo theories/Relations/Relation_Definitions.vo theories/Classes/Equivalence.vo theories/Program/Basics.vo theories/Program/Tactics.vo

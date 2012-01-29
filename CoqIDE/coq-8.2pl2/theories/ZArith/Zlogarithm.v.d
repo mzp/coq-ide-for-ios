@@ -1,1 +1,0 @@
-theories/ZArith/Zlogarithm.vo theories/ZArith/Zlogarithm.glob: theories/ZArith/Zlogarithm.v theories/ZArith/ZArith_base.vo plugins/omega/Omega.vo theories/ZArith/Zcomplements.vo theories/ZArith/Zpower.vo

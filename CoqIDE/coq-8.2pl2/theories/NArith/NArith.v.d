@@ -1,1 +1,0 @@
-theories/NArith/NArith.vo theories/NArith/NArith.glob: theories/NArith/NArith.v theories/NArith/BinPos.vo theories/NArith/BinNat.vo theories/NArith/Nnat.vo theories/NArith/Ndigits.vo plugins/setoid_ring/NArithRing.vo

@@ -1,1 +1,0 @@
-plugins/setoid_ring/RealField.vo plugins/setoid_ring/RealField.glob: plugins/setoid_ring/RealField.v theories/NArith/Nnat.vo plugins/setoid_ring/ArithRing.vo plugins/setoid_ring/Ring.vo plugins/setoid_ring/Field.vo theories/Reals/Rdefinitions.vo theories/Reals/Rpow_def.vo theories/Reals/Raxioms.vo

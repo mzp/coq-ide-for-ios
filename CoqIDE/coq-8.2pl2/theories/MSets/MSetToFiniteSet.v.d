@@ -1,1 +1,0 @@
-theories/MSets/MSetToFiniteSet.vo theories/MSets/MSetToFiniteSet.glob: theories/MSets/MSetToFiniteSet.v theories/Sets/Ensembles.vo theories/Sets/Finite_sets.vo theories/MSets/MSetInterface.vo theories/MSets/MSetProperties.vo theories/Structures/OrdersEx.vo

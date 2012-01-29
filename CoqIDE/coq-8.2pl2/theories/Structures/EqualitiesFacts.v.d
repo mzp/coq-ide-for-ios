@@ -1,1 +1,0 @@
-theories/Structures/EqualitiesFacts.vo theories/Structures/EqualitiesFacts.glob: theories/Structures/EqualitiesFacts.v theories/Structures/Equalities.vo theories/Bool/Bool.vo theories/Lists/SetoidList.vo theories/Classes/RelationPairs.vo

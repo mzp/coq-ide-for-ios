@@ -1,1 +1,0 @@
-theories/Classes/SetoidDec.vo theories/Classes/SetoidDec.glob: theories/Classes/SetoidDec.v theories/Classes/SetoidClass.vo theories/Logic/Decidable.vo theories/Program/Program.vo theories/Arith/Arith.vo theories/Bool/Bool.vo

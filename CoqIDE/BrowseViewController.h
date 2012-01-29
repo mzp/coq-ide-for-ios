@@ -7,19 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DefinitionViewController.h"
-#import "ProofViewController.h"
 #import "coq.h"
 
-@interface BrowseViewController : UIViewController <DefinitionDelegator,ProofDelegator>
+@interface BrowseViewController : UIViewController
 {
     NSString* definition;
     NSString* proof;
     @private Coq* coq;
-    __weak IBOutlet UITextView *code;
-    __weak IBOutlet UITextView *log;
+    __weak IBOutlet UITextField *code;
+    __weak IBOutlet UITextView *result;
 }
+- (IBAction)eval:(id)sender;
 
-- (IBAction)add:(id)sender;
 
 @end

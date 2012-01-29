@@ -1,1 +1,0 @@
-theories/Numbers/Integer/NatPairs/ZNatPairs.vo theories/Numbers/Integer/NatPairs/ZNatPairs.glob: theories/Numbers/Integer/NatPairs/ZNatPairs.v theories/Numbers/Natural/Abstract/NProperties.vo theories/Numbers/Integer/Abstract/ZProperties.vo plugins/setoid_ring/Ring.vo

@@ -1,1 +1,0 @@
-theories/Classes/RelationClasses.vo theories/Classes/RelationClasses.glob: theories/Classes/RelationClasses.v theories/Classes/Init.vo theories/Program/Basics.vo theories/Program/Tactics.vo theories/Relations/Relation_Definitions.vo

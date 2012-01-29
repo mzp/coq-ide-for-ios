@@ -1,1 +1,0 @@
-theories/Relations/Operators_Properties.vo theories/Relations/Operators_Properties.glob: theories/Relations/Operators_Properties.v theories/Relations/Relation_Definitions.vo theories/Relations/Relation_Operators.vo

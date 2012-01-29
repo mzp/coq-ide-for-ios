@@ -1,1 +1,0 @@
-plugins/romega/ReflOmegaCore.vo plugins/romega/ReflOmegaCore.glob: plugins/romega/ReflOmegaCore.v theories/Lists/List.vo theories/Bool/Bool.vo theories/Bool/Sumbool.vo theories/Arith/EqNat.vo theories/Setoids/Setoid.vo plugins/setoid_ring/Ring_theory.vo theories/Logic/Decidable.vo theories/ZArith/ZArith_base.vo

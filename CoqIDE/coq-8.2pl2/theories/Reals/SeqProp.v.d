@@ -1,1 +1,0 @@
-theories/Reals/SeqProp.vo theories/Reals/SeqProp.glob: theories/Reals/SeqProp.v theories/Reals/Rbase.vo theories/Reals/Rfunctions.vo theories/Reals/Rseries.vo theories/Logic/Classical.vo theories/Arith/Max.vo

@@ -1,1 +1,0 @@
-theories/MSets/MSetPositive.vo theories/MSets/MSetPositive.glob: theories/MSets/MSetPositive.v theories/Bool/Bool.vo theories/NArith/BinPos.vo theories/Structures/Orders.vo theories/MSets/MSetInterface.vo

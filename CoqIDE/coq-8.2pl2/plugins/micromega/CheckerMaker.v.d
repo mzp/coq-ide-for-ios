@@ -1,1 +1,0 @@
-plugins/micromega/CheckerMaker.vo plugins/micromega/CheckerMaker.glob: plugins/micromega/CheckerMaker.v theories/Setoids/Setoid.vo theories/Logic/Decidable.vo theories/Lists/List.vo plugins/micromega/Refl.vo

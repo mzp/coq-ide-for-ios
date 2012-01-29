@@ -1,1 +1,0 @@
-theories/FSets/FSetPositive.vo theories/FSets/FSetPositive.glob: theories/FSets/FSetPositive.v theories/Bool/Bool.vo theories/NArith/BinPos.vo theories/Structures/OrderedType.vo theories/Structures/OrderedTypeEx.vo theories/FSets/FSetInterface.vo

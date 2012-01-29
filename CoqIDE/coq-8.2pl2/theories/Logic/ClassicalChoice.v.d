@@ -1,1 +1,0 @@
-theories/Logic/ClassicalChoice.vo theories/Logic/ClassicalChoice.glob: theories/Logic/ClassicalChoice.v theories/Logic/ClassicalUniqueChoice.vo theories/Logic/RelationalChoice.vo theories/Logic/ChoiceFacts.vo
